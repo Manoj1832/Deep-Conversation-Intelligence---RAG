@@ -1,0 +1,227 @@
+{
+  "version": "1.0.0",
+  "total_analyzed_partner_messages": 17351,
+  "total_analyzed_user_messages": 5720,
+  "partner_emotion_distribution": {
+    "affectionate": {
+      "count": 794,
+      "percentage": 4.58
+    },
+    "playful_teasing": {
+      "count": 1532,
+      "percentage": 8.83
+    },
+    "caring_routine": {
+      "count": 61,
+      "percentage": 0.35
+    },
+    "anxious_tense": {
+      "count": 397,
+      "percentage": 2.29
+    },
+    "irritated_angry": {
+      "count": 262,
+      "percentage": 1.51
+    },
+    "sad_vulnerable": {
+      "count": 120,
+      "percentage": 0.69
+    },
+    "casual_neutral": {
+      "count": 14185,
+      "percentage": 81.75
+    }
+  },
+  "user_emotion_distribution": {
+    "affectionate": {
+      "count": 135,
+      "percentage": 2.36
+    },
+    "playful_teasing": {
+      "count": 138,
+      "percentage": 2.41
+    },
+    "caring_routine": {
+      "count": 51,
+      "percentage": 0.89
+    },
+    "anxious_tense": {
+      "count": 86,
+      "percentage": 1.5
+    },
+    "irritated_angry": {
+      "count": 58,
+      "percentage": 1.01
+    },
+    "sad_vulnerable": {
+      "count": 25,
+      "percentage": 0.44
+    },
+    "casual_neutral": {
+      "count": 5227,
+      "percentage": 91.38
+    }
+  },
+  "dominant_partner_emotion": "casual_neutral",
+  "hourly_partner_emotions": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {
+      "casual_neutral": 3,
+      "affectionate": 3
+    },
+    "6": {
+      "casual_neutral": 35,
+      "sad_vulnerable": 2,
+      "irritated_angry": 1,
+      "playful_teasing": 14
+    },
+    "7": {
+      "casual_neutral": 344,
+      "affectionate": 28,
+      "playful_teasing": 29,
+      "sad_vulnerable": 4,
+      "anxious_tense": 3,
+      "irritated_angry": 4
+    },
+    "8": {
+      "casual_neutral": 307,
+      "affectionate": 6,
+      "sad_vulnerable": 2,
+      "playful_teasing": 17,
+      "irritated_angry": 15,
+      "anxious_tense": 3
+    },
+    "9": {
+      "affectionate": 47,
+      "casual_neutral": 409,
+      "anxious_tense": 17,
+      "irritated_angry": 2,
+      "sad_vulnerable": 7,
+      "playful_teasing": 38,
+      "caring_routine": 3
+    },
+    "10": {
+      "playful_teasing": 134,
+      "casual_neutral": 773,
+      "anxious_tense": 30,
+      "affectionate": 47,
+      "caring_routine": 4,
+      "sad_vulnerable": 9,
+      "irritated_angry": 6
+    },
+    "11": {
+      "casual_neutral": 737,
+      "playful_teasing": 90,
+      "affectionate": 44,
+      "anxious_tense": 19,
+      "irritated_angry": 8,
+      "caring_routine": 3,
+      "sad_vulnerable": 5
+    },
+    "12": {
+      "casual_neutral": 909,
+      "playful_teasing": 99,
+      "affectionate": 51,
+      "irritated_angry": 12,
+      "anxious_tense": 31,
+      "sad_vulnerable": 4,
+      "caring_routine": 9
+    },
+    "13": {
+      "sad_vulnerable": 12,
+      "casual_neutral": 1812,
+      "caring_routine": 18,
+      "playful_teasing": 176,
+      "anxious_tense": 64,
+      "affectionate": 100,
+      "irritated_angry": 40
+    },
+    "14": {
+      "playful_teasing": 56,
+      "casual_neutral": 638,
+      "irritated_angry": 7,
+      "anxious_tense": 3,
+      "affectionate": 28,
+      "sad_vulnerable": 1,
+      "caring_routine": 1
+    },
+    "15": {
+      "casual_neutral": 987,
+      "anxious_tense": 26,
+      "playful_teasing": 152,
+      "affectionate": 57,
+      "sad_vulnerable": 12,
+      "irritated_angry": 17,
+      "caring_routine": 3
+    },
+    "16": {
+      "casual_neutral": 1643,
+      "playful_teasing": 145,
+      "anxious_tense": 42,
+      "affectionate": 43,
+      "irritated_angry": 31,
+      "sad_vulnerable": 17,
+      "caring_routine": 5
+    },
+    "17": {
+      "playful_teasing": 153,
+      "casual_neutral": 1612,
+      "anxious_tense": 42,
+      "irritated_angry": 26,
+      "affectionate": 60,
+      "sad_vulnerable": 11
+    },
+    "18": {
+      "affectionate": 75,
+      "playful_teasing": 96,
+      "casual_neutral": 1126,
+      "anxious_tense": 29,
+      "sad_vulnerable": 11,
+      "caring_routine": 2,
+      "irritated_angry": 14
+    },
+    "19": {
+      "casual_neutral": 1563,
+      "anxious_tense": 54,
+      "affectionate": 101,
+      "playful_teasing": 181,
+      "irritated_angry": 38,
+      "sad_vulnerable": 17,
+      "caring_routine": 8
+    },
+    "20": {
+      "casual_neutral": 923,
+      "playful_teasing": 118,
+      "affectionate": 75,
+      "irritated_angry": 33,
+      "anxious_tense": 30,
+      "sad_vulnerable": 3,
+      "caring_routine": 5
+    },
+    "21": {
+      "casual_neutral": 196,
+      "affectionate": 13,
+      "playful_teasing": 16,
+      "irritated_angry": 4,
+      "sad_vulnerable": 1,
+      "anxious_tense": 1
+    },
+    "22": {
+      "casual_neutral": 69,
+      "irritated_angry": 4,
+      "playful_teasing": 5,
+      "affectionate": 13,
+      "sad_vulnerable": 2
+    },
+    "23": {
+      "playful_teasing": 13,
+      "casual_neutral": 99,
+      "anxious_tense": 3,
+      "affectionate": 3
+    }
+  }
+}

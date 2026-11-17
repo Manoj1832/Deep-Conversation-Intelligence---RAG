@@ -1,0 +1,85 @@
+{
+  "report_title": "HerAI WhatsApp Ingestion Data Quality Report",
+  "generated_at": "2026-11-14T16:49:56.189820",
+  "metrics": {
+    "total_records_discovered": 25093,
+    "successfully_parsed_records": 25093,
+    "text_messages": 23109,
+    "media_messages": 809,
+    "system_events": 120,
+    "deleted_messages": 176,
+    "call_logs": 844,
+    "unknown_sender_records": 0,
+    "malformed_records": 0,
+    "duplicate_records_pruned": 122,
+    "empty_placeholder_records": 35,
+    "timestamp_parsing_failures": 0,
+    "unicode_decoding_failures": 0,
+    "missing_message_bodies": 35,
+    "chronological_ordering_violations": 37,
+    "unique_messages_stored": 24971,
+    "total_sessions_created": 205
+  },
+  "participant_breakdown": {
+    "partner": {
+      "total_messages": 18450,
+      "text_messages": 17351,
+      "media_messages": 365,
+      "deleted_messages": 119,
+      "call_logs": 480,
+      "system_events": 118,
+      "empty_placeholders": 17,
+      "multiline_messages": 18
+    },
+    "user": {
+      "total_messages": 6521,
+      "text_messages": 5720,
+      "media_messages": 365,
+      "deleted_messages": 52,
+      "call_logs": 364,
+      "system_events": 2,
+      "empty_placeholders": 18,
+      "multiline_messages": 29
+    },
+    "system": {
+      "total_messages": 0,
+      "system_events": 0
+    }
+  },
+  "archive_reconciliation": {
+    "WhatsApp Chat - Sakthi.zip": {
+      "total_raw_lines": 2795,
+      "total_parsed_records": 2791,
+      "text_messages": 2673,
+      "media_messages": 50,
+      "deleted_messages": 8,
+      "call_logs": 42,
+      "system_events": 13,
+      "empty_placeholders": 5,
+      "date_range": "2025-11-29T18:09:06 to 2026-11-14T20:32:02"
+    },
+    "WhatsApp Chat - sakthijayasri.zip": {
+      "total_raw_lines": 17098,
+      "total_parsed_records": 15769,
+      "text_messages": 14914,
+      "media_messages": 468,
+      "deleted_messages": 84,
+      "call_logs": 204,
+      "system_events": 76,
+      "empty_placeholders": 23,
+      "date_range": "2025-11-27T20:59:23 to 2026-11-14T20:36:47"
+    },
+    "WhatsApp Chat - ❤️_🩹.zip": {
+      "total_raw_lines": 8668,
+      "total_parsed_records": 6533,
+      "text_messages": 5522,
+      "media_messages": 291,
+      "deleted_messages": 84,
+      "call_logs": 598,
+      "system_events": 31,
+      "empty_placeholders": 7,
+      "date_range": "2026-09-22T10:38:04 to 2026-11-14T18:26:01"
+    }
+  },
+  "reconciliation_summary": "Source records discovered: 25093 across 3 archives. Deduplication identified and pruned 122 overlapping records. Successfully stored 24971 unique messages clustered into 205 sessions."
+}

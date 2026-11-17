@@ -1,0 +1,344 @@
+{
+  "version": "2.0.0",
+  "partner_profile": {
+    "participant": "partner",
+    "total_text_messages_analyzed": 17351,
+    "message_rhythm": {
+      "median_character_length": 12.0,
+      "mean_character_length": 18.09,
+      "percentage_two_tokens_or_less": 55.71,
+      "percentage_one_word_replies": 36.49,
+      "total_tokens_evaluated": 54257
+    },
+    "language_patterns": {
+      "tanglish_colloquial_code_switch_ratio": 0.193,
+      "english_loan_word_ratio": 0.028,
+      "top_colloquial_vocabulary": [
+        {
+          "word": "na",
+          "count": 1429
+        },
+        {
+          "word": "nee",
+          "count": 1296
+        },
+        {
+          "word": "da",
+          "count": 1221
+        },
+        {
+          "word": "tha",
+          "count": 1062
+        },
+        {
+          "word": "la",
+          "count": 1000
+        },
+        {
+          "word": "enna",
+          "count": 714
+        },
+        {
+          "word": "seri",
+          "count": 601
+        },
+        {
+          "word": "nu",
+          "count": 571
+        },
+        {
+          "word": "illa",
+          "count": 559
+        },
+        {
+          "word": "dei",
+          "count": 545
+        },
+        {
+          "word": "ah",
+          "count": 500
+        },
+        {
+          "word": "va",
+          "count": 415
+        },
+        {
+          "word": "enaku",
+          "count": 395
+        },
+        {
+          "word": "athu",
+          "count": 365
+        },
+        {
+          "word": "ya",
+          "count": 308
+        },
+        {
+          "word": "panna",
+          "count": 300
+        },
+        {
+          "word": "pannu",
+          "count": 297
+        },
+        {
+          "word": "enga",
+          "count": 284
+        },
+        {
+          "word": "paaru",
+          "count": 280
+        },
+        {
+          "word": "ama",
+          "count": 278
+        }
+      ]
+    },
+    "emoji_patterns": {
+      "total_emojis_detected": 2743,
+      "top_emojis": [
+        {
+          "emoji": "🙄",
+          "count": 390,
+          "percentage": 14.22
+        },
+        {
+          "emoji": "🥺",
+          "count": 376,
+          "percentage": 13.71
+        },
+        {
+          "emoji": "😂",
+          "count": 326,
+          "percentage": 11.88
+        },
+        {
+          "emoji": "😭",
+          "count": 279,
+          "percentage": 10.17
+        },
+        {
+          "emoji": "🥹",
+          "count": 166,
+          "percentage": 6.05
+        },
+        {
+          "emoji": "🤣",
+          "count": 143,
+          "percentage": 5.21
+        },
+        {
+          "emoji": "🤗",
+          "count": 109,
+          "percentage": 3.97
+        },
+        {
+          "emoji": "😒",
+          "count": 98,
+          "percentage": 3.57
+        },
+        {
+          "emoji": "😚",
+          "count": 64,
+          "percentage": 2.33
+        },
+        {
+          "emoji": "😢",
+          "count": 53,
+          "percentage": 1.93
+        },
+        {
+          "emoji": "🏽",
+          "count": 51,
+          "percentage": 1.86
+        },
+        {
+          "emoji": "😏",
+          "count": 51,
+          "percentage": 1.86
+        }
+      ]
+    },
+    "syntactic_style": {
+      "question_percentage": 7.88,
+      "lowercase_start_percentage": 0.68,
+      "trailing_ellipsis_percentage": 0.02
+    }
+  },
+  "user_profile": {
+    "participant": "user",
+    "total_text_messages_analyzed": 5720,
+    "message_rhythm": {
+      "median_character_length": 17.0,
+      "mean_character_length": 32.64,
+      "percentage_two_tokens_or_less": 41.7,
+      "percentage_one_word_replies": 23.01,
+      "total_tokens_evaluated": 28528
+    },
+    "language_patterns": {
+      "tanglish_colloquial_code_switch_ratio": 0.129,
+      "english_loan_word_ratio": 0.057,
+      "top_colloquial_vocabulary": [
+        {
+          "word": "sorry",
+          "count": 1138
+        },
+        {
+          "word": "naa",
+          "count": 569
+        },
+        {
+          "word": "la",
+          "count": 498
+        },
+        {
+          "word": "nee",
+          "count": 483
+        },
+        {
+          "word": "di",
+          "count": 415
+        },
+        {
+          "word": "dhaa",
+          "count": 411
+        },
+        {
+          "word": "nu",
+          "count": 369
+        },
+        {
+          "word": "ah",
+          "count": 343
+        },
+        {
+          "word": "enna",
+          "count": 294
+        },
+        {
+          "word": "seri",
+          "count": 220
+        },
+        {
+          "word": "illa",
+          "count": 210
+        },
+        {
+          "word": "and",
+          "count": 204
+        },
+        {
+          "word": "unakku",
+          "count": 149
+        },
+        {
+          "word": "ku",
+          "count": 147
+        },
+        {
+          "word": "enakku",
+          "count": 138
+        },
+        {
+          "word": "panna",
+          "count": 135
+        },
+        {
+          "word": "ok",
+          "count": 122
+        },
+        {
+          "word": "pannu",
+          "count": 121
+        },
+        {
+          "word": "sakthi",
+          "count": 120
+        },
+        {
+          "word": "irukku",
+          "count": 110
+        }
+      ]
+    },
+    "emoji_patterns": {
+      "total_emojis_detected": 399,
+      "top_emojis": [
+        {
+          "emoji": "😂",
+          "count": 99,
+          "percentage": 24.81
+        },
+        {
+          "emoji": "🙄",
+          "count": 20,
+          "percentage": 5.01
+        },
+        {
+          "emoji": "🤗",
+          "count": 20,
+          "percentage": 5.01
+        },
+        {
+          "emoji": "🥹",
+          "count": 16,
+          "percentage": 4.01
+        },
+        {
+          "emoji": "😘",
+          "count": 15,
+          "percentage": 3.76
+        },
+        {
+          "emoji": "🏻",
+          "count": 14,
+          "percentage": 3.51
+        },
+        {
+          "emoji": "😏",
+          "count": 11,
+          "percentage": 2.76
+        },
+        {
+          "emoji": "😳",
+          "count": 10,
+          "percentage": 2.51
+        },
+        {
+          "emoji": "😭",
+          "count": 10,
+          "percentage": 2.51
+        },
+        {
+          "emoji": "😫",
+          "count": 8,
+          "percentage": 2.01
+        },
+        {
+          "emoji": "😁",
+          "count": 8,
+          "percentage": 2.01
+        },
+        {
+          "emoji": "🙂",
+          "count": 8,
+          "percentage": 2.01
+        }
+      ]
+    },
+    "syntactic_style": {
+      "question_percentage": 9.6,
+      "lowercase_start_percentage": 0.87,
+      "trailing_ellipsis_percentage": 0.09
+    }
+  },
+  "summary_comparison": {
+    "partner_median_length": 12.0,
+    "user_median_length": 17.0,
+    "partner_short_bubble_ratio": 55.71,
+    "user_short_bubble_ratio": 41.7,
+    "key_takeaway": "Partner communicates in rapid, highly concise short bubbles (median 13 chars, 52% <= 2 tokens), while User writes longer structured inquiries."
+  }
+}

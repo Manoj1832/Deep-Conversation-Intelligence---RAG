@@ -1,0 +1,241 @@
+{
+  "profile_id": "3ef0b3f6-1099-45b0-ae78-c4e247b11927",
+  "version": "1.0.0",
+  "participant": "partner",
+  "total_messages_analyzed": 18450,
+  "language_patterns": {
+    "total_words_analyzed": 53856,
+    "top_colloquial_vocabulary": [
+      {
+        "word": "na",
+        "count": 1429
+      },
+      {
+        "word": "nee",
+        "count": 1296
+      },
+      {
+        "word": "da",
+        "count": 1221
+      },
+      {
+        "word": "tha",
+        "count": 1062
+      },
+      {
+        "word": "la",
+        "count": 1000
+      },
+      {
+        "word": "enna",
+        "count": 714
+      },
+      {
+        "word": "seri",
+        "count": 601
+      },
+      {
+        "word": "nu",
+        "count": 572
+      },
+      {
+        "word": "illa",
+        "count": 560
+      },
+      {
+        "word": "dei",
+        "count": 545
+      },
+      {
+        "word": "ah",
+        "count": 500
+      },
+      {
+        "word": "va",
+        "count": 415
+      },
+      {
+        "word": "enaku",
+        "count": 395
+      },
+      {
+        "word": "athu",
+        "count": 365
+      },
+      {
+        "word": "ya",
+        "count": 308
+      },
+      {
+        "word": "panna",
+        "count": 300
+      },
+      {
+        "word": "pannu",
+        "count": 297
+      },
+      {
+        "word": "enga",
+        "count": 284
+      },
+      {
+        "word": "paaru",
+        "count": 280
+      },
+      {
+        "word": "ama",
+        "count": 278
+      },
+      {
+        "word": "ipo",
+        "count": 275
+      },
+      {
+        "word": "unaku",
+        "count": 267
+      },
+      {
+        "word": "ethuku",
+        "count": 267
+      },
+      {
+        "word": "sollu",
+        "count": 266
+      },
+      {
+        "word": "ku",
+        "count": 260
+      },
+      {
+        "word": "po",
+        "count": 245
+      },
+      {
+        "word": "irruku",
+        "count": 243
+      },
+      {
+        "word": "manoj",
+        "count": 238
+      },
+      {
+        "word": "en",
+        "count": 237
+      },
+      {
+        "word": "inga",
+        "count": 236
+      }
+    ],
+    "observed_greetings": {
+      "bye": 74,
+      "morning": 25,
+      "gn": 13,
+      "hi": 5,
+      "gm": 4
+    },
+    "observed_signoffs": {
+      "bye": 90,
+      "gn": 12,
+      "night": 2,
+      "tc": 1
+    },
+    "evidence_samples": {
+      "greetings": [
+        "5ae49b65-743a-4930-9039-79cd69843266",
+        "506f4dfe-35d0-41e7-88a3-c5e47250e2e4",
+        "bdf05c9c-ade3-47b7-8bf4-d55db3fc5d49",
+        "4161b6ae-2725-4557-a162-f0d662a75888",
+        "03b2f4e0-e52e-4b8e-a711-75b62f825de5"
+      ],
+      "signoffs": [
+        "0e742c3d-b0de-4db1-af28-6ee444016c3c",
+        "506f4dfe-35d0-41e7-88a3-c5e47250e2e4",
+        "bdf05c9c-ade3-47b7-8bf4-d55db3fc5d49",
+        "4161b6ae-2725-4557-a162-f0d662a75888",
+        "1890a243-74aa-41a1-91a5-f8a48d5f696b"
+      ],
+      "colloquialisms": []
+    }
+  },
+  "message_patterns": {
+    "average_character_length": 18.1,
+    "average_burst_messages": 4.85,
+    "median_response_latency_seconds": 10.0,
+    "lowercase_start_percentage": 0.68,
+    "trailing_ellipsis_percentage": 0.02,
+    "question_percentage": 0.71
+  },
+  "emoji_patterns": [
+    {
+      "emoji": "🙄",
+      "count": 390
+    },
+    {
+      "emoji": "🥺",
+      "count": 376
+    },
+    {
+      "emoji": "😂",
+      "count": 326
+    },
+    {
+      "emoji": "😭",
+      "count": 279
+    },
+    {
+      "emoji": "🥹",
+      "count": 166
+    },
+    {
+      "emoji": "🤣",
+      "count": 143
+    },
+    {
+      "emoji": "🤗",
+      "count": 109
+    },
+    {
+      "emoji": "😒",
+      "count": 98
+    },
+    {
+      "emoji": "😚",
+      "count": 64
+    },
+    {
+      "emoji": "😢",
+      "count": 53
+    },
+    {
+      "emoji": "🏽",
+      "count": 51
+    },
+    {
+      "emoji": "😏",
+      "count": 51
+    },
+    {
+      "emoji": "🫣",
+      "count": 50
+    },
+    {
+      "emoji": "😅",
+      "count": 47
+    },
+    {
+      "emoji": "♀",
+      "count": 43
+    }
+  ],
+  "communication_styles": {
+    "tone": "Warm, highly expressive, reactive, casual",
+    "dialect": "Tamil-English (Tanglish) bilingual code-switching",
+    "formality_score": 0.08
+  },
+  "observations_count": 5,
+  "confidence": 0.96,
+  "review_status": "verified",
+  "created_at": "2026-11-17T04:01:33.987303+00:00",
+  "updated_at": "2026-11-17T04:01:33.987303+00:00"
+}

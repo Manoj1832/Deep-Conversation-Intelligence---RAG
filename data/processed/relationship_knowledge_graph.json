@@ -1,0 +1,1208 @@
+{
+  "version": "1.0.0",
+  "total_nodes": 46,
+  "total_edges": 56,
+  "nodes": [
+    {
+      "node_id": "person:sakthi",
+      "name": "Sakthi",
+      "node_type": "person",
+      "properties": {
+        "role": "companion",
+        "normalized_sender": "partner"
+      }
+    },
+    {
+      "node_id": "person:manoj",
+      "name": "Manoj",
+      "node_type": "person",
+      "properties": {
+        "role": "user",
+        "normalized_sender": "user"
+      }
+    },
+    {
+      "node_id": "person:amma",
+      "name": "Amma (Mother)",
+      "node_type": "person",
+      "properties": {
+        "role": "family_member"
+      }
+    },
+    {
+      "node_id": "person:dharshan",
+      "name": "Dharshan",
+      "node_type": "person",
+      "properties": {
+        "role": "college_junior_associate"
+      }
+    },
+    {
+      "node_id": "place:thiruchengode",
+      "name": "Thiruchengode",
+      "node_type": "place",
+      "properties": {
+        "type": "town_meeting_point"
+      }
+    },
+    {
+      "node_id": "place:potteneri",
+      "name": "Potteneri",
+      "node_type": "place",
+      "properties": {
+        "type": "native_home_location"
+      }
+    },
+    {
+      "node_id": "place:college",
+      "name": "College Campus",
+      "node_type": "place",
+      "properties": {
+        "type": "academic_institution"
+      }
+    },
+    {
+      "node_id": "topic:family_acceptance",
+      "name": "Family Acceptance & Pressure",
+      "node_type": "topic",
+      "properties": {}
+    },
+    {
+      "node_id": "topic:chat_privacy",
+      "name": "Chat Privacy & Disappearing Messages",
+      "node_type": "topic",
+      "properties": {}
+    },
+    {
+      "node_id": "topic:trust_honesty",
+      "name": "Trust & Direct Transparency",
+      "node_type": "topic",
+      "properties": {}
+    },
+    {
+      "node_id": "topic:overthinking",
+      "name": "Overthinking & Reassurance",
+      "node_type": "topic",
+      "properties": {}
+    },
+    {
+      "node_id": "event:aef4f52a-178d-4203-8504-2e6e3ad522c6",
+      "name": "Companion explicitly articulated family oppos...",
+      "node_type": "event",
+      "properties": {
+        "category": "family_context",
+        "fact_type": "explicit_statement",
+        "full_summary": "Companion explicitly articulated family opposition to the relationship due to being an only daughter, continuing contact despite uncertainty."
+      }
+    },
+    {
+      "node_id": "date:2025-11-28",
+      "name": "2025-11-28",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "name": "Urgent situation where phone was checked at h...",
+      "node_type": "event",
+      "properties": {
+        "category": "relationship_conflicts",
+        "fact_type": "explicit_statement",
+        "full_summary": "Urgent situation where phone was checked at home, revealing meeting at Thiruchengode. High anxiety, asks what family saw and to delete chats."
+      }
+    },
+    {
+      "node_id": "date:2025-11-29",
+      "name": "2025-11-29",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:41e57d91-d3b4-43fa-b4e3-123052982e66",
+      "name": "Discussion of show suggested by Dharshan and ...",
+      "node_type": "event",
+      "properties": {
+        "category": "shared_experiences",
+        "fact_type": "observed_event",
+        "full_summary": "Discussion of show suggested by Dharshan and watching movie 'Sirai' via Net Mirror during class leisure. Playful banter about Dharshan."
+      }
+    },
+    {
+      "node_id": "date:2026-02-17",
+      "name": "2026-02-17",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:2989f7b8-d3ff-4e4c-9ca4-271995d09171",
+      "name": "Extended discussion over trust and breakup. C...",
+      "node_type": "event",
+      "properties": {
+        "category": "reconciliation_events",
+        "fact_type": "observed_event",
+        "full_summary": "Extended discussion over trust and breakup. Companion acknowledged anger and mood swings, offered sincere apologies, and reconnected warmly."
+      }
+    },
+    {
+      "node_id": "date:2026-05-23",
+      "name": "2026-05-23",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:ea722f06-326d-4059-a0af-065655640e33",
+      "name": "Conflict regarding sensitive private matter s...",
+      "node_type": "event",
+      "properties": {
+        "category": "privacy_concerns",
+        "fact_type": "explicit_statement",
+        "full_summary": "Conflict regarding sensitive private matter shared with outsiders. Companion expresses humiliation, demanding direct answers ('Inga paaru')."
+      }
+    },
+    {
+      "node_id": "date:2026-07-28",
+      "name": "2026-07-28",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:64449f87-51ba-4d36-a402-a811d88c837b",
+      "name": "Companion firmly objects to repeated reopenin...",
+      "node_type": "event",
+      "properties": {
+        "category": "unresolved_topics",
+        "fact_type": "explicit_statement",
+        "full_summary": "Companion firmly objects to repeated reopening of past arguments regarding Dharshan, stating 'leave that' and asking not to restart resolved matters."
+      }
+    },
+    {
+      "node_id": "date:2026-08-03",
+      "name": "2026-08-03",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:374b8c57-8ec9-4742-ad35-cb8d17e09db5",
+      "name": "After a call, companion expressed hurt over f...",
+      "node_type": "event",
+      "properties": {
+        "category": "relationship_conflicts",
+        "fact_type": "observed_event",
+        "full_summary": "After a call, companion expressed hurt over feeling compared to other girls and replaced, using emotional 'good bye' language without permanent blocking."
+      }
+    },
+    {
+      "node_id": "date:2026-09-22",
+      "name": "2026-09-22",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:afea65ef-0270-4905-b565-fbba15efaaae",
+      "name": "Companion explicitly identifies her state as ...",
+      "node_type": "event",
+      "properties": {
+        "category": "recurring_topics",
+        "fact_type": "explicit_statement",
+        "full_summary": "Companion explicitly identifies her state as 'overthinking', expressing fear of Manoj talking to another girl, crying emojis, asking him not to leave, followed by everyday banter."
+      }
+    },
+    {
+      "node_id": "date:2026-10-12",
+      "name": "2026-10-12",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:42cdc815-9d33-4cd1-af17-ffb188c01fc3",
+      "name": "Intense argument regarding outside involvemen...",
+      "node_type": "event",
+      "properties": {
+        "category": "relationship_conflicts",
+        "fact_type": "explicit_statement",
+        "full_summary": "Intense argument regarding outside involvement and honesty. Rejects gifts as substitute for truth, asks for address to return belongings, framing around respect."
+      }
+    },
+    {
+      "node_id": "date:2026-11-04",
+      "name": "2026-11-04",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "name": "Incident where mother became suspicious. Comp...",
+      "node_type": "event",
+      "properties": {
+        "category": "family_context",
+        "fact_type": "explicit_statement",
+        "full_summary": "Incident where mother became suspicious. Companion felt dizzy and unwell, repeatedly asking Manoj to leave ('please go') and delete chats. Later cared enough to say 'eat before going'."
+      }
+    },
+    {
+      "node_id": "date:2026-11-10",
+      "name": "2026-11-10",
+      "node_type": "date",
+      "properties": {}
+    },
+    {
+      "node_id": "memory:6d520473-f6e8-4ee8-92c1-7cb599c406dc",
+      "name": "Use of Pet Name 'Chello'",
+      "node_type": "memory",
+      "properties": {
+        "category": "affection_patterns",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:432581ef-effb-4f19-b1a5-77b0e811b4ae",
+      "name": "Family Resistance & Only Daughter Pressure",
+      "node_type": "memory",
+      "properties": {
+        "category": "family_context",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:63381f8e-e024-4c28-81e9-536aa940d7f4",
+      "name": "Thiruchengode Meeting & Phone Check Urgency",
+      "node_type": "memory",
+      "properties": {
+        "category": "trust_and_privacy",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:cf9df803-2b17-41a8-83a2-7f1bace9bd56",
+      "name": "Movie 'Sirai' & Playful Dharshan Teasing",
+      "node_type": "memory",
+      "properties": {
+        "category": "communication_style",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:8eee4cc2-09b0-4ccc-a33a-53f69d7ee545",
+      "name": "May 23 Conflict, Sincere Apology & Repair",
+      "node_type": "memory",
+      "properties": {
+        "category": "reconciliation_patterns",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:93d41ad0-ba4e-4b2b-a074-ec33de06091e",
+      "name": "July 28 Privacy Breach & Need for Direct Answers",
+      "node_type": "memory",
+      "properties": {
+        "category": "trust_and_privacy",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:21f172c4-957b-4455-928a-2dff4c8a2eb9",
+      "name": "August 3 Objection to Reopening Closed Topics",
+      "node_type": "memory",
+      "properties": {
+        "category": "conflict_patterns",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:75d795b6-e07e-4463-bc92-f02b49e1df24",
+      "name": "September 22 Emotional Hurt & Goodbye Language",
+      "node_type": "memory",
+      "properties": {
+        "category": "conflict_patterns",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:00d7ce2e-f1b8-4312-a659-fa4e64ee6e71",
+      "name": "October 12 Explicit Overthinking & Missing Him",
+      "node_type": "memory",
+      "properties": {
+        "category": "affection_patterns",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:49bdfcad-a650-4513-8560-92aeb9a34c62",
+      "name": "November 4 Trust Conflict & Returning Belongings",
+      "node_type": "memory",
+      "properties": {
+        "category": "trust_and_privacy",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:13a7f89e-da42-4e80-b676-3659f4676c9a",
+      "name": "November 10 Safety Boundary & Mother's Suspicion",
+      "node_type": "memory",
+      "properties": {
+        "category": "family_context",
+        "fact_type": "explicit_statement"
+      }
+    },
+    {
+      "node_id": "memory:2c7a772b-17d7-4cc4-aae0-0a3fb43378d8",
+      "name": "Manoj's Prior Recollections Regarding Junior Dharshan",
+      "node_type": "memory",
+      "properties": {
+        "category": "third_party_topics",
+        "fact_type": "user_recollection"
+      }
+    },
+    {
+      "node_id": "memory:c4e0c269-35b6-48ed-b216-e08b19f00007",
+      "name": "College Examination Schedules",
+      "node_type": "memory",
+      "properties": {
+        "category": "daily_life_context",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:0759666d-ed6c-49fd-9a8d-c9bc1c2fb472",
+      "name": "Shared Product Interest: Vega Hair Styling Set",
+      "node_type": "memory",
+      "properties": {
+        "category": "daily_life_context",
+        "fact_type": "observed_pattern"
+      }
+    },
+    {
+      "node_id": "memory:2c1e47e2-b5ef-4cf4-a6b5-19001eff0dfc",
+      "name": "Chat Privacy & Disappearing Messages Management",
+      "node_type": "memory",
+      "properties": {
+        "category": "trust_and_privacy",
+        "fact_type": "observed_pattern"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "0abdd1d0-10d4-4cc5-8b20-217a01808c43",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:aef4f52a-178d-4203-8504-2e6e3ad522c6",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "0bbacb29-2cf6-4977-a7cf-55e6ef9daf35"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "567d689d-1bbc-4b79-93d6-c573a53caad1",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:aef4f52a-178d-4203-8504-2e6e3ad522c6",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "0bbacb29-2cf6-4977-a7cf-55e6ef9daf35"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "ed510f1e-ec42-40ed-9aee-5ad497054e00",
+      "source_node_id": "event:aef4f52a-178d-4203-8504-2e6e3ad522c6",
+      "target_node_id": "date:2025-11-28",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "0bbacb29-2cf6-4977-a7cf-55e6ef9daf35"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "7d0d2c35-62e8-480d-8222-6f8aa3fe79f2",
+      "source_node_id": "event:aef4f52a-178d-4203-8504-2e6e3ad522c6",
+      "target_node_id": "topic:family_acceptance",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "0bbacb29-2cf6-4977-a7cf-55e6ef9daf35"
+      ],
+      "confidence": 0.92,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "20877685-708a-4413-aa9e-1a55b10d6b07",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "be347d24-37bf-4f6e-b051-f924e140fb0e",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "56c17035-3f3d-431c-a08f-becf7b9a0094",
+      "source_node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "target_node_id": "date:2025-11-29",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "68615ca4-9ca3-482f-8c3a-e99f8bd30982",
+      "source_node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "target_node_id": "topic:trust_honesty",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "ee163907-a78c-4f8e-acb9-799811c7d300",
+      "source_node_id": "event:aafd92ce-971b-49f5-9483-54206d3d6ff0",
+      "target_node_id": "place:thiruchengode",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "233986c5-72ac-4f3c-a4fa-891cbce4af15",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:41e57d91-d3b4-43fa-b4e3-123052982e66",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "9fcd3df1-55f2-4279-b81d-6d16058c924b",
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "fed9b9a0-6450-4609-b571-a1c6777db302"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "1ab2e5ef-cc67-45cb-ab5e-70c049bdd6a3",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:41e57d91-d3b4-43fa-b4e3-123052982e66",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "9fcd3df1-55f2-4279-b81d-6d16058c924b",
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "fed9b9a0-6450-4609-b571-a1c6777db302"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "1797d27a-7a88-4bd8-a0d3-8584100ba3e5",
+      "source_node_id": "event:41e57d91-d3b4-43fa-b4e3-123052982e66",
+      "target_node_id": "date:2026-02-17",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "9fcd3df1-55f2-4279-b81d-6d16058c924b",
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "fed9b9a0-6450-4609-b571-a1c6777db302"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "c8be1ad4-aea7-40be-98d7-34c4310debcf",
+      "source_node_id": "event:41e57d91-d3b4-43fa-b4e3-123052982e66",
+      "target_node_id": "person:dharshan",
+      "relation_type": "MENTIONS",
+      "source_message_ids": [
+        "9fcd3df1-55f2-4279-b81d-6d16058c924b",
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "fed9b9a0-6450-4609-b571-a1c6777db302"
+      ],
+      "confidence": 0.92,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "fafb1ae6-1600-496b-95d4-8db3e0868f41",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:2989f7b8-d3ff-4e4c-9ca4-271995d09171",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "0e2947ef-2066-4f3c-a7b9-e08f92181438",
+        "a71a77cb-a104-4106-8f43-2dedea2f327a",
+        "c99d030a-5d46-4364-b693-91c8fb5ea1f1",
+        "18eea998-776c-4b73-b118-5159f285d849"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "11e040f3-d152-4c89-bbf1-4cd40df1d3d2",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:2989f7b8-d3ff-4e4c-9ca4-271995d09171",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "0e2947ef-2066-4f3c-a7b9-e08f92181438",
+        "a71a77cb-a104-4106-8f43-2dedea2f327a",
+        "c99d030a-5d46-4364-b693-91c8fb5ea1f1",
+        "18eea998-776c-4b73-b118-5159f285d849"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "e32a2efc-8bfe-425c-a5ff-7b105a57e3a2",
+      "source_node_id": "event:2989f7b8-d3ff-4e4c-9ca4-271995d09171",
+      "target_node_id": "date:2026-05-23",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "0e2947ef-2066-4f3c-a7b9-e08f92181438",
+        "a71a77cb-a104-4106-8f43-2dedea2f327a",
+        "c99d030a-5d46-4364-b693-91c8fb5ea1f1",
+        "18eea998-776c-4b73-b118-5159f285d849"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "6d7e50ad-d610-45e6-beb2-14280674521d",
+      "source_node_id": "event:2989f7b8-d3ff-4e4c-9ca4-271995d09171",
+      "target_node_id": "topic:trust_honesty",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "0e2947ef-2066-4f3c-a7b9-e08f92181438",
+        "a71a77cb-a104-4106-8f43-2dedea2f327a",
+        "c99d030a-5d46-4364-b693-91c8fb5ea1f1",
+        "18eea998-776c-4b73-b118-5159f285d849"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "2b1098d3-9210-4ee3-b94d-74f705538e2e",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:ea722f06-326d-4059-a0af-065655640e33",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "b73ecc56-8c39-40b3-9b43-4afdacaa42bc",
+        "2d1086d6-dd0d-42e4-9503-6a08f15f1956",
+        "003db200-f156-411c-9fd9-e593435af1e2",
+        "42c375cd-fba7-4d75-8b0d-bf434b5eb9fe"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "bbc1f6b8-0f17-4683-b993-3e0b9618a7e1",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:ea722f06-326d-4059-a0af-065655640e33",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "b73ecc56-8c39-40b3-9b43-4afdacaa42bc",
+        "2d1086d6-dd0d-42e4-9503-6a08f15f1956",
+        "003db200-f156-411c-9fd9-e593435af1e2",
+        "42c375cd-fba7-4d75-8b0d-bf434b5eb9fe"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "32b9753d-202d-4ae5-b84a-52946f131827",
+      "source_node_id": "event:ea722f06-326d-4059-a0af-065655640e33",
+      "target_node_id": "date:2026-07-28",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "b73ecc56-8c39-40b3-9b43-4afdacaa42bc",
+        "2d1086d6-dd0d-42e4-9503-6a08f15f1956",
+        "003db200-f156-411c-9fd9-e593435af1e2",
+        "42c375cd-fba7-4d75-8b0d-bf434b5eb9fe"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "90f938ed-b207-460e-b587-5f1adc478592",
+      "source_node_id": "event:ea722f06-326d-4059-a0af-065655640e33",
+      "target_node_id": "topic:chat_privacy",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "b73ecc56-8c39-40b3-9b43-4afdacaa42bc",
+        "2d1086d6-dd0d-42e4-9503-6a08f15f1956",
+        "003db200-f156-411c-9fd9-e593435af1e2",
+        "42c375cd-fba7-4d75-8b0d-bf434b5eb9fe"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "c3b4257d-c691-413f-aba4-a0a69b6a49b5",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:64449f87-51ba-4d36-a402-a811d88c837b",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "e02edfc6-de51-4673-a7fa-6fda10be1a4e",
+        "4a239778-6f34-448d-85db-abf2879d1846",
+        "201babe5-addc-4488-92af-46bc51244fbc",
+        "a0058aaf-48d5-48aa-bf3d-2071b0223be0"
+      ],
+      "confidence": 0.93,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "73f56b24-890a-413f-ad75-fadb87225c46",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:64449f87-51ba-4d36-a402-a811d88c837b",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "e02edfc6-de51-4673-a7fa-6fda10be1a4e",
+        "4a239778-6f34-448d-85db-abf2879d1846",
+        "201babe5-addc-4488-92af-46bc51244fbc",
+        "a0058aaf-48d5-48aa-bf3d-2071b0223be0"
+      ],
+      "confidence": 0.93,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "d489f2d4-6f40-4353-b2e1-761aef9e0b1a",
+      "source_node_id": "event:64449f87-51ba-4d36-a402-a811d88c837b",
+      "target_node_id": "date:2026-08-03",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "e02edfc6-de51-4673-a7fa-6fda10be1a4e",
+        "4a239778-6f34-448d-85db-abf2879d1846",
+        "201babe5-addc-4488-92af-46bc51244fbc",
+        "a0058aaf-48d5-48aa-bf3d-2071b0223be0"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "08290bef-6be1-4906-85bf-1d7dab0794d7",
+      "source_node_id": "event:64449f87-51ba-4d36-a402-a811d88c837b",
+      "target_node_id": "person:dharshan",
+      "relation_type": "MENTIONS",
+      "source_message_ids": [
+        "e02edfc6-de51-4673-a7fa-6fda10be1a4e",
+        "4a239778-6f34-448d-85db-abf2879d1846",
+        "201babe5-addc-4488-92af-46bc51244fbc",
+        "a0058aaf-48d5-48aa-bf3d-2071b0223be0"
+      ],
+      "confidence": 0.92,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "78f33fad-9518-40b8-bea0-113841425ba2",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:374b8c57-8ec9-4742-ad35-cb8d17e09db5",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "b4417bf4-9a9d-498d-b70e-a6ec681cd209",
+        "8514e349-8067-4acd-ab35-2fd278f0935b",
+        "432c543f-1e14-428a-8f1f-ee7d9c4056a3",
+        "20872cc2-e253-4bec-9c3e-eb3d568ede37"
+      ],
+      "confidence": 0.9,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "adf26036-0544-4e25-9894-45223b2b7da1",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:374b8c57-8ec9-4742-ad35-cb8d17e09db5",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "b4417bf4-9a9d-498d-b70e-a6ec681cd209",
+        "8514e349-8067-4acd-ab35-2fd278f0935b",
+        "432c543f-1e14-428a-8f1f-ee7d9c4056a3",
+        "20872cc2-e253-4bec-9c3e-eb3d568ede37"
+      ],
+      "confidence": 0.9,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "932eff41-aa50-461e-b4be-4519daf1bf3e",
+      "source_node_id": "event:374b8c57-8ec9-4742-ad35-cb8d17e09db5",
+      "target_node_id": "date:2026-09-22",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "b4417bf4-9a9d-498d-b70e-a6ec681cd209",
+        "8514e349-8067-4acd-ab35-2fd278f0935b",
+        "432c543f-1e14-428a-8f1f-ee7d9c4056a3",
+        "20872cc2-e253-4bec-9c3e-eb3d568ede37"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "090d3a3a-2741-47aa-afcf-c7e03d7c5dc8",
+      "source_node_id": "event:374b8c57-8ec9-4742-ad35-cb8d17e09db5",
+      "target_node_id": "topic:trust_honesty",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "b4417bf4-9a9d-498d-b70e-a6ec681cd209",
+        "8514e349-8067-4acd-ab35-2fd278f0935b",
+        "432c543f-1e14-428a-8f1f-ee7d9c4056a3",
+        "20872cc2-e253-4bec-9c3e-eb3d568ede37"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "8dc30912-7927-4ad1-b2ae-1e42fef2ccc0",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:afea65ef-0270-4905-b565-fbba15efaaae",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "1bc20343-fd82-4fd8-9267-db5444fade28",
+        "d4df2c19-8f86-4187-8ea8-620e871643b4",
+        "03306d37-787b-4c09-aee4-05f2a716b2f1",
+        "3500c18c-8b6a-4a05-9947-db052b283375"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "c94e6fb4-54b1-4ced-b58f-af45b1388fa1",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:afea65ef-0270-4905-b565-fbba15efaaae",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "1bc20343-fd82-4fd8-9267-db5444fade28",
+        "d4df2c19-8f86-4187-8ea8-620e871643b4",
+        "03306d37-787b-4c09-aee4-05f2a716b2f1",
+        "3500c18c-8b6a-4a05-9947-db052b283375"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "999312af-2883-4b36-804f-0d032f009141",
+      "source_node_id": "event:afea65ef-0270-4905-b565-fbba15efaaae",
+      "target_node_id": "date:2026-10-12",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "1bc20343-fd82-4fd8-9267-db5444fade28",
+        "d4df2c19-8f86-4187-8ea8-620e871643b4",
+        "03306d37-787b-4c09-aee4-05f2a716b2f1",
+        "3500c18c-8b6a-4a05-9947-db052b283375"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "b7dbc337-6989-4640-8b2d-c53cde4cdc04",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:42cdc815-9d33-4cd1-af17-ffb188c01fc3",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "a7079eb0-da4d-4248-88f6-fc656d95f45b",
+        "0ec43cf7-2808-42c1-b2b6-c72b0f96dbdd",
+        "f8cfc48a-dcd1-4027-8716-e3bf90410bd5",
+        "236c7029-a00c-4e33-9dd8-45b6bc199075"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "993d4206-53cb-4993-9f19-c4f4cd9e3449",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:42cdc815-9d33-4cd1-af17-ffb188c01fc3",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "a7079eb0-da4d-4248-88f6-fc656d95f45b",
+        "0ec43cf7-2808-42c1-b2b6-c72b0f96dbdd",
+        "f8cfc48a-dcd1-4027-8716-e3bf90410bd5",
+        "236c7029-a00c-4e33-9dd8-45b6bc199075"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "433db008-731b-462b-a1c8-d50a8456cade",
+      "source_node_id": "event:42cdc815-9d33-4cd1-af17-ffb188c01fc3",
+      "target_node_id": "date:2026-11-04",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "a7079eb0-da4d-4248-88f6-fc656d95f45b",
+        "0ec43cf7-2808-42c1-b2b6-c72b0f96dbdd",
+        "f8cfc48a-dcd1-4027-8716-e3bf90410bd5",
+        "236c7029-a00c-4e33-9dd8-45b6bc199075"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "fe522666-6c81-4df6-b747-b046c9f75043",
+      "source_node_id": "event:42cdc815-9d33-4cd1-af17-ffb188c01fc3",
+      "target_node_id": "topic:trust_honesty",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "a7079eb0-da4d-4248-88f6-fc656d95f45b",
+        "0ec43cf7-2808-42c1-b2b6-c72b0f96dbdd",
+        "f8cfc48a-dcd1-4027-8716-e3bf90410bd5",
+        "236c7029-a00c-4e33-9dd8-45b6bc199075"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "10087dbc-9726-4634-8e40-0c8321cb244c",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.97,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "693e02c5-38a2-491c-b544-970da05e06ca",
+      "source_node_id": "person:manoj",
+      "target_node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "relation_type": "PARTICIPATED_IN",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.97,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "4aa28c44-dba1-4cb9-a8cf-a40d14d3b35f",
+      "source_node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "target_node_id": "date:2026-11-10",
+      "relation_type": "OCCURRED_ON",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.99,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "55fb1772-c4a2-4a5c-9889-85f2b1bd9100",
+      "source_node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "target_node_id": "topic:family_acceptance",
+      "relation_type": "RELATED_TO",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.92,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "e54c29d9-9299-4d33-99bc-96ddcef74a36",
+      "source_node_id": "event:4e2758c7-beff-404d-8ae1-913c9619cd63",
+      "target_node_id": "person:amma",
+      "relation_type": "MENTIONS",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "b74946f6-4481-4d8b-8e36-2ba48dbbf27d",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:6d520473-f6e8-4ee8-92c1-7cb599c406dc",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "8c8e8d2e-cfc3-4a96-92d1-2db149d57022",
+        "1143f709-30ec-4089-8158-a669cac5b230",
+        "0f45a414-3dab-4919-9c5a-d75be8095771",
+        "5e5105b3-2131-4913-9103-a2ebe83603da"
+      ],
+      "confidence": 0.98,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "9dec9135-ec45-4e3a-bef5-0792aa404169",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:432581ef-effb-4f19-b1a5-77b0e811b4ae",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "0bbacb29-2cf6-4977-a7cf-55e6ef9daf35"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "27b19592-78f8-4a60-88d0-8dd6b7b27ab2",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:63381f8e-e024-4c28-81e9-536aa940d7f4",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "6b9f80cc-ec18-455d-800b-748505416e43",
+        "fb546eb0-d70a-4d1a-8246-2e4c2ad13e0b",
+        "98d6ed37-55ee-4b0c-b0c4-3e88534236b4",
+        "a9530f2b-2215-4a8f-8101-94e247894ec8"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "0606800e-1849-4a81-a010-4ba3d30321f4",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:cf9df803-2b17-41a8-83a2-7f1bace9bd56",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "9fcd3df1-55f2-4279-b81d-6d16058c924b",
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "fed9b9a0-6450-4609-b571-a1c6777db302"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "b577807a-ac89-4577-a69b-f22ec2830ad5",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:8eee4cc2-09b0-4ccc-a33a-53f69d7ee545",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "0e2947ef-2066-4f3c-a7b9-e08f92181438",
+        "a71a77cb-a104-4106-8f43-2dedea2f327a",
+        "c99d030a-5d46-4364-b693-91c8fb5ea1f1",
+        "18eea998-776c-4b73-b118-5159f285d849"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "801c8734-1ae8-44bf-aa1e-a9c9230c0c85",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:93d41ad0-ba4e-4b2b-a074-ec33de06091e",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "b73ecc56-8c39-40b3-9b43-4afdacaa42bc",
+        "2d1086d6-dd0d-42e4-9503-6a08f15f1956",
+        "003db200-f156-411c-9fd9-e593435af1e2",
+        "42c375cd-fba7-4d75-8b0d-bf434b5eb9fe"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "a7e56637-50df-4741-915e-3d6d36ab1929",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:21f172c4-957b-4455-928a-2dff4c8a2eb9",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "e02edfc6-de51-4673-a7fa-6fda10be1a4e",
+        "4a239778-6f34-448d-85db-abf2879d1846",
+        "201babe5-addc-4488-92af-46bc51244fbc",
+        "a0058aaf-48d5-48aa-bf3d-2071b0223be0"
+      ],
+      "confidence": 0.93,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "61d89f45-8c8b-4663-99e6-0146af9ef65e",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:75d795b6-e07e-4463-bc92-f02b49e1df24",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "b4417bf4-9a9d-498d-b70e-a6ec681cd209",
+        "8514e349-8067-4acd-ab35-2fd278f0935b",
+        "432c543f-1e14-428a-8f1f-ee7d9c4056a3",
+        "20872cc2-e253-4bec-9c3e-eb3d568ede37"
+      ],
+      "confidence": 0.89,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "8031617c-556c-4d59-8fd9-d41594a830af",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:00d7ce2e-f1b8-4312-a659-fa4e64ee6e71",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "1bc20343-fd82-4fd8-9267-db5444fade28",
+        "d4df2c19-8f86-4187-8ea8-620e871643b4",
+        "03306d37-787b-4c09-aee4-05f2a716b2f1",
+        "3500c18c-8b6a-4a05-9947-db052b283375"
+      ],
+      "confidence": 0.96,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "86fe5910-4724-4a08-84f4-8470f1192c2b",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:49bdfcad-a650-4513-8560-92aeb9a34c62",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "a7079eb0-da4d-4248-88f6-fc656d95f45b",
+        "0ec43cf7-2808-42c1-b2b6-c72b0f96dbdd",
+        "f8cfc48a-dcd1-4027-8716-e3bf90410bd5",
+        "236c7029-a00c-4e33-9dd8-45b6bc199075"
+      ],
+      "confidence": 0.94,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "cdabe528-495c-4ca6-8907-4626f53f00e8",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:13a7f89e-da42-4e80-b676-3659f4676c9a",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "c4af3a97-8efc-4f73-83f3-a8678b403d58",
+        "e66f55d8-4d7f-4210-ba1c-442ba87248c2",
+        "5b2b893b-3405-494b-97f3-df4b90a0f1df",
+        "eba8f9be-cfb3-4ee8-844a-3a2cef634c07"
+      ],
+      "confidence": 0.97,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "a4605a6a-89b8-4ebe-8c7b-c0fe06c035a8",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:2c7a772b-17d7-4cc4-aae0-0a3fb43378d8",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "32621aca-85da-40f9-9efc-8b717da9c8a9",
+        "a1002853-71e7-4566-b5ab-b89703429beb",
+        "e6a1662f-fb57-43f3-83f5-06245ccb3b47",
+        "da3dba6d-2d13-4877-ba25-cd439a6fc0ac"
+      ],
+      "confidence": 0.5,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "7711f88f-34fa-4078-aba2-b73722d10495",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:c4e0c269-35b6-48ed-b216-e08b19f00007",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "a212431f-0ed9-433a-97c8-55e17dd232ca",
+        "07ad644e-17f6-4c3a-b16b-4755d2992f5c",
+        "2f0db534-3630-446d-bc9e-86e0b54b38a7",
+        "edb80161-32b5-46cb-9709-b59ac8a3bfdb"
+      ],
+      "confidence": 0.92,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "39e927cb-60fc-42c1-be38-594b52c6b118",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:0759666d-ed6c-49fd-9a8d-c9bc1c2fb472",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "6b258709-1ed0-474f-a210-83d9982a2652"
+      ],
+      "confidence": 0.95,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    },
+    {
+      "edge_id": "6500264a-467e-460d-b59b-3e5fdd9336ce",
+      "source_node_id": "person:sakthi",
+      "target_node_id": "memory:2c1e47e2-b5ef-4cf4-a6b5-19001eff0dfc",
+      "relation_type": "DISCUSSED",
+      "source_message_ids": [
+        "bbc1d982-1881-4301-b7d9-406949299632",
+        "e67a4fcd-2970-42fc-8d8d-9819448839e5",
+        "1137096b-1b7d-4d25-b840-5f00c494d6d1",
+        "f5c2530a-4e24-4091-93a3-15dc430d27f8"
+      ],
+      "confidence": 0.97,
+      "evidence_type": "source_archive_quote",
+      "review_status": "approved"
+    }
+  ]
+}

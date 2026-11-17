@@ -1,0 +1,9 @@
+{
+  "version": "v1.24.0",
+  "version_number": 24,
+  "last_reindexed_at": "2026-11-17T10:06:06.327845+05:30",
+  "total_interactions_indexed": 3423,
+  "total_partner_utterances_indexed": 17351,
+  "build_duration_ms": 1080.76,
+  "status": "HEALTHY"
+}

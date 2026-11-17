@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "total_memories": 15,
+  "approved_memories": 14,
+  "pending_review_memories": 1,
+  "unverified_user_recollections": 1,
+  "evidence_grounding_rate": 1.0,
+  "extraction_timestamp": "2026-11-17T04:01:34.447324+00:00"
+}

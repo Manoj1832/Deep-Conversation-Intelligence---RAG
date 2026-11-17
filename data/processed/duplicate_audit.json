@@ -1,0 +1,942 @@
+{
+  "generated_at": "2026-11-14T16:49:56.191527",
+  "total_duplicates_found": 122,
+  "unique_canonical_messages_affected": 85,
+  "duplicate_items": [
+    {
+      "content_hash": "41546c4b6c1aa8ae48a8cdcc6690098f48cf9b9f6f1dd13b5bd3dd2c95ea4705",
+      "canonical_message_id": "bead0fc1-fa0c-443e-aec8-5aeefb407626",
+      "timestamp": "2026-02-19T12:47:05",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - Sakthi.zip"
+      ]
+    },
+    {
+      "content_hash": "21ce99409b1e6ece21c02883255e8229341045ff40366e3103dda066a78d35ce",
+      "canonical_message_id": "8180f41a-2524-4542-934c-c337ae6a1516",
+      "timestamp": "2026-04-25T15:30:55",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - Sakthi.zip"
+      ]
+    },
+    {
+      "content_hash": "e8e8a5cedeb83eabde1bcb5da0c39c57fc924242edca11d7088d412c9bdba282",
+      "canonical_message_id": "3c435319-1072-4167-9566-59b1d8cc8ece",
+      "timestamp": "2025-12-06T07:46:09",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "8dc19a5318b78a12eff8384b1c99b5c045803f8590c5000ebd92f47927407c0f",
+      "canonical_message_id": "4da1132a-326b-4a87-b577-6b79b3139aa1",
+      "timestamp": "2025-12-06T07:46:14",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "24a694045e6e671177ab606bc8b2c691df6c8d1c4801ed2f8082de53a3ba9cae",
+      "canonical_message_id": "03382189-bb16-42d6-b803-385c12afa9be",
+      "timestamp": "2025-12-06T07:50:30",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "e36490c03d6c40b9179cac395d977cb89e745e346400d1a49b92ece60521baa0",
+      "canonical_message_id": "877af162-f147-4e22-9059-80f8f9a96a22",
+      "timestamp": "2026-01-07T19:55:07",
+      "sender": "partner",
+      "body_snippet": "‎sticker omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "bebe6bf89275ca349e6508e35e34ae9d8c68ec593eedc4808314ce3f2870cf36",
+      "canonical_message_id": "67b99aa0-7340-4509-8df4-4f69d1bba6f1",
+      "timestamp": "2026-02-26T13:46:04",
+      "sender": "partner",
+      "body_snippet": "‎sticker omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "5f55bc01ba3b0b848790ca8f6db28137ee8812b48157ba39546dd0230c5dcfad",
+      "canonical_message_id": "3cf6512e-e00c-4e65-aaa3-8f8a3fe5d26d",
+      "timestamp": "2026-03-03T15:10:28",
+      "sender": "partner",
+      "body_snippet": "Dei",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "676e7e8237f76717293d4434d4e2ac274d72aac39a95e19e9ae169470f5fa4f2",
+      "canonical_message_id": "ab95ee03-ffea-49d2-9f12-92989cbcb923",
+      "timestamp": "2026-03-03T15:10:41",
+      "sender": "partner",
+      "body_snippet": "Dei",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "5a1234ebab75064aaf8888f924b1fe41398e81e40313965739aa8cd0bfe51aa7",
+      "canonical_message_id": "4a563183-9baa-4d89-a178-b8d5a5152cb5",
+      "timestamp": "2026-03-24T06:38:21",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "1135039971040338cf0eafdd40c6e992f658623d715785ca018e177808aa6e8c",
+      "canonical_message_id": "d20852be-6b3d-42a9-aa01-2c1fb85607b1",
+      "timestamp": "2026-03-24T07:08:46",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "a9311e3cce1dbbb45a28925ff30e9e7ae26da5193e05e1df4837e4bdf32c6228",
+      "canonical_message_id": "3a9200df-8d88-4736-ac4c-bc131f7ab293",
+      "timestamp": "2026-03-24T07:08:52",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "c2e608bf3725711e2f654b76cbd16d57579791eea752d5521a04838863998849",
+      "canonical_message_id": "ebbb522f-e2fd-4051-ae1a-cecc2e63f483",
+      "timestamp": "2026-03-24T07:08:57",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "1db22e4748cc989b445cb668e0b20798723529940dfa3ddfd587252e6d9218cb",
+      "canonical_message_id": "82f38949-0577-4553-af2e-b362fa002e55",
+      "timestamp": "2026-03-24T07:09:03",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "98ec416bdea23df4803c57df9702c4227b61d36d49d8e10496acf36e3ff97ea4",
+      "canonical_message_id": "afe8ee31-6056-490d-904c-492e5dec0cab",
+      "timestamp": "2026-03-24T07:09:43",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "d24379be0769116993119abe84a8bac81c685402d8047668cc542f8c2792917d",
+      "canonical_message_id": "681b192c-68b0-4a07-b9a9-3380c7c7855f",
+      "timestamp": "2026-03-25T13:47:01",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "f4d7e8a4301c67d6f6664f140ba71f5f4e94a97d2cd88b512bd9eb509c34601e",
+      "canonical_message_id": "6d662547-9723-416d-8b01-fb47fa7c25f5",
+      "timestamp": "2026-03-25T14:00:59",
+      "sender": "partner",
+      "body_snippet": "Sorry",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "a80034824282bc41a3724bda09bfeb557b54f982d1a2ec9ac110034dee019594",
+      "canonical_message_id": "117e239b-2a9f-4c3a-96eb-37590b3c6fe9",
+      "timestamp": "2026-03-25T14:03:24",
+      "sender": "partner",
+      "body_snippet": "Sorry",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "2bbac3579dd2e4bc2b13369e8c94e6d189ddea9b7495b0dfc6463b7126c083f9",
+      "canonical_message_id": "0636fa54-433c-4eca-b512-b9d69314aa6a",
+      "timestamp": "2026-04-19T09:49:42",
+      "sender": "partner",
+      "body_snippet": "Dei",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "77f65e936fa7efa7f44ba543aa8eca6db1c6310c6a7464edffecf71d22e2678b",
+      "canonical_message_id": "7d11a03b-d6e0-494f-8086-c1c3389843f7",
+      "timestamp": "2026-04-19T09:49:43",
+      "sender": "partner",
+      "body_snippet": "Ei",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "11c68cd0f1683cb85c0409eeeca7c360f7bb9f5655d2a1654966d20f8576b3a5",
+      "canonical_message_id": "50d36cd4-0806-43e1-95d2-cbcbf383fa04",
+      "timestamp": "2026-04-19T13:13:46",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "8d2c574e74396e4baca3c3eae557bbf32dcc80393c2d98088c35cb5326affe46",
+      "canonical_message_id": "f76b59f2-7308-4602-b40d-8909d0c4dc73",
+      "timestamp": "2026-04-19T13:13:50",
+      "sender": "partner",
+      "body_snippet": "Pls",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "0779736a3beb345585ee89e24cd78bc5542bc3f2850bbe8a42297de16c1d9900",
+      "canonical_message_id": "a5299244-e0f1-4249-848f-ae9c32377c21",
+      "timestamp": "2026-04-25T15:26:50",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "fa4fff1ac894b378158ce2e121c4aedd9bf786eaf6a139b9325cc475b4653333",
+      "canonical_message_id": "0eb1f6a3-f768-4c14-bc8f-ab446fd98731",
+      "timestamp": "2026-04-29T13:44:25",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 4,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "e9867de705786cf11940c89a2dc408b31f8a875ebb73a87eb9fb545d0d07c54e",
+      "canonical_message_id": "434a3c66-24a3-4759-98f1-11c844b1195d",
+      "timestamp": "2026-04-29T13:45:02",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "ed4ab15726146eca1171532cc8d1722fb5ed05da0020f90de2bf5b43c5c97f42",
+      "canonical_message_id": "d4fc826c-8b57-4c1c-9a7b-50d19187ce80",
+      "timestamp": "2026-04-29T13:45:42",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "dc125bc053df814fa638de57d27b7b315bdf1d11b5f50ceef29e2de8900ea12c",
+      "canonical_message_id": "c1454a3b-8151-467a-aefb-e12873ee2704",
+      "timestamp": "2026-04-29T13:45:43",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "1378331ccfdc23f5e2aec51fa894c5d5797123f07562c5fca738723a8289510b",
+      "canonical_message_id": "d6975897-dec7-41a5-98bd-68b03dc168a7",
+      "timestamp": "2026-04-29T13:45:44",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 4,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "08c4406f46c2df6fa31dba7e555d6ecde28c3cc86a15861b7a1a80f51d860142",
+      "canonical_message_id": "f7fc5868-8867-4554-adee-2365814a32d3",
+      "timestamp": "2026-05-23T14:22:45",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "37397bea8b6405564bd6f3d028997f861bd5ad1a2b06be8e7e6c1219efd8762c",
+      "canonical_message_id": "58b89925-3faf-4088-8899-ab5c1be676d1",
+      "timestamp": "2026-05-23T14:22:48",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "7d317ae52ede26e2407a9531ca6d154b7f4e750ea5d9e1d3e4081dc059a1b819",
+      "canonical_message_id": "470fe37b-0048-432c-9cba-14f3737242b3",
+      "timestamp": "2026-05-24T13:14:34",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 4,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "018bdb46fb25b88fc2378c564d81d0e2aff30c2cf92f595f4f261d4a69e3724f",
+      "canonical_message_id": "4ebc8d58-64d4-4bec-b652-de019481487d",
+      "timestamp": "2026-05-24T13:14:41",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "86d37d368d3f05e5b98a4bd44ebcbde61d7bef01eb9ad27353b065e0345a0e0d",
+      "canonical_message_id": "f6e5466b-fd02-4633-8cb3-dcc9877b0173",
+      "timestamp": "2026-05-26T17:56:28",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "9a146ef4e6b4fc480ba216bd1afa806d9fe445aa62b1a28283f55e3606d286c8",
+      "canonical_message_id": "b0a12c1b-1cc9-4d6a-9c8b-dbf64d88403b",
+      "timestamp": "2026-07-28T08:22:27",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "dc90bff71209240145198c3576503db2a7f828e422254a52bbb1c595edbe0355",
+      "canonical_message_id": "525548c5-a55c-41da-95de-817871543a0a",
+      "timestamp": "2026-08-03T12:22:44",
+      "sender": "user",
+      "body_snippet": "‎You deleted this message.",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "f3ed915dd089caa69237422379f5b35a3b4c92ff5191479b6135bf978619f9c0",
+      "canonical_message_id": "19abb506-2397-41b7-afb6-61c94ce1d28f",
+      "timestamp": "2026-08-03T13:44:36",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "5a03b147fcb60ab7587079e1ee94f0a8c7c2b7632440bfcaa9752eace9a303a9",
+      "canonical_message_id": "81341ca3-2dda-4ebc-8443-4b2db69ff873",
+      "timestamp": "2026-08-03T16:33:32",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "a43d56c3b801ba50a2eb052559f5f532136b2fe3c0698a2f30e6ab382fe512d1",
+      "canonical_message_id": "5af5eefd-84b2-4099-ada6-9bf7be63819f",
+      "timestamp": "2026-08-03T17:11:37",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "8d89e6a5182fe7e86ed0e6507d050f91965ab7054955eec5e5008d43f3ff76ab",
+      "canonical_message_id": "9dbcef92-d8d3-49ae-a32e-db62136ffbc5",
+      "timestamp": "2026-08-05T13:23:50",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "d7169800a2c4fb4c37633bb8b23654c0ab6b2a151ed5fc39beb1aa3535cd912c",
+      "canonical_message_id": "768b7fe5-86e2-4993-929f-43df2c90455d",
+      "timestamp": "2026-08-05T13:24:05",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "20ca293acdb078d2010ec1c2d3bf69f090ff06950b9f758d46ca6c1a01463eb6",
+      "canonical_message_id": "8c6896e7-790c-4d5b-8240-fbdda242c65d",
+      "timestamp": "2026-08-08T16:15:52",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "6e58c5f4168223adf79934c9c692d4fcf223bc0720e886aee116b542773691fe",
+      "canonical_message_id": "6dcd3f63-88c5-4a19-84e0-3ef898244847",
+      "timestamp": "2026-08-08T18:44:11",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "6912fce16d8d5f2e71d39cc6c408a372906a023cc65d09999906ced118ed7333",
+      "canonical_message_id": "dceb2d9b-3bda-43b6-935b-cd957cd36fb1",
+      "timestamp": "2026-08-08T18:46:11",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "029e68d3fd728f2443b59df44a6af6b12794e40bddbcfbb465d098f8dd9f3f42",
+      "canonical_message_id": "a487d04a-9e05-489e-be50-e7afb40f4cd7",
+      "timestamp": "2026-08-19T06:35:40",
+      "sender": "partner",
+      "body_snippet": "Dei",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - sakthijayasri.zip"
+      ]
+    },
+    {
+      "content_hash": "214cc874ccfeb380d5f6ba6bf7838cfc912a6c22917242ad3b457a87eee4ffea",
+      "canonical_message_id": "588af647-003d-4a2e-a9c7-439257394c55",
+      "timestamp": "2026-09-23T20:20:04",
+      "sender": "partner",
+      "body_snippet": "D",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "4806fd3825a56d4b495aba15658a4c1596e96156316f526a3c2d0d0853d61b2d",
+      "canonical_message_id": "7791445d-59ef-4fa5-9158-a74f2c23bfd8",
+      "timestamp": "2026-09-23T20:26:04",
+      "sender": "partner",
+      "body_snippet": "B",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "202dae1736a0e5855a73879460c8d915120f8d776384f1ae80452f8c77df14f4",
+      "canonical_message_id": "afccc639-66c4-49e9-a8bb-b5948ea6d607",
+      "timestamp": "2026-09-23T20:26:09",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "478397c1478c959f8d8411fbaa9d7cfc371ee2efca346e3cc314f7d23cb91b99",
+      "canonical_message_id": "c19c4d9e-bcb6-47b7-9880-409da23a6c9e",
+      "timestamp": "2026-09-23T20:26:11",
+      "sender": "partner",
+      "body_snippet": "J",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "e5d51def2e644fb9cfa0baa7ea3296f3567cad3acba70fee69cfd30d4450b114",
+      "canonical_message_id": "ca924569-ae2b-42c2-b6d8-882735638f63",
+      "timestamp": "2026-09-23T20:26:13",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "f079c5154f3ef442953bfaf513c1e065225eb16be31b6734a69205a7cafe541f",
+      "canonical_message_id": "a8d37e42-9f3f-4f98-b9d6-43dce94f365f",
+      "timestamp": "2026-09-23T20:26:16",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "4714342982440e3a0d7851ed62c1e275a0997379e1926bd4d4356cb6e7d2379d",
+      "canonical_message_id": "a0388f2f-4bb5-4235-89cb-ddf1cd6ff702",
+      "timestamp": "2026-09-23T20:26:18",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "59ae0b5c4f2ae56b0b3542de350c350c9d72be2899794282b0167fb12d9e07e7",
+      "canonical_message_id": "75399d33-34db-4cae-90e9-0e2243373860",
+      "timestamp": "2026-09-23T20:26:30",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "cd141cc3c1fc7c59665c882921f092c650f6e54bde439cb07d665ceaa29c5261",
+      "canonical_message_id": "24e8d2df-3dda-46d7-bec6-74e97cebb307",
+      "timestamp": "2026-09-23T20:26:32",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "84ffd26e4ad3663feb6f46070a2aa7e3e3cbd44fb1b7bf3f197ab9ab462aa854",
+      "canonical_message_id": "fdab069e-4c2b-403d-8ac8-9b5bc530bf2e",
+      "timestamp": "2026-09-23T20:26:34",
+      "sender": "partner",
+      "body_snippet": "H",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "05534f2a215e8a0b49fb7656de183d095a96060d75f3235f3e0e51cd04b0a8fe",
+      "canonical_message_id": "5c205c38-abbd-4f1f-b35c-70b0de66171c",
+      "timestamp": "2026-09-25T13:55:20",
+      "sender": "user",
+      "body_snippet": "‎You deleted this message.",
+      "occurrences_count": 4,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "d9ba33edcb8c643dbab31e058cc145b9b5649af1c2b09b4d18d53aa12c783a50",
+      "canonical_message_id": "f837bc92-4040-46d3-a6ef-73e329d9f6e1",
+      "timestamp": "2026-09-25T13:55:24",
+      "sender": "user",
+      "body_snippet": "‎You deleted this message.",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "85724532eada770ca3694b27fd1e523dba704210be6aad62b353bfd54366a6a8",
+      "canonical_message_id": "a6e361e2-bd39-4d32-930e-2bc3dae9fdc5",
+      "timestamp": "2026-09-25T14:42:54",
+      "sender": "partner",
+      "body_snippet": "G",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "738d1b2ffe2d5eaa5ba15c31313ee33c960904730746a2bd3dcae9b3ce0bac9b",
+      "canonical_message_id": "ff2d0007-f746-4784-9d5c-721d3a2965b1",
+      "timestamp": "2026-09-25T15:21:31",
+      "sender": "partner",
+      "body_snippet": "B",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "e98c822fa5b7872ca77e669cf10ae05a3588c13a71cb4fd731ff533be5b95cb6",
+      "canonical_message_id": "b201100e-cf31-4160-a441-f06456d82c50",
+      "timestamp": "2026-09-29T15:08:12",
+      "sender": "partner",
+      "body_snippet": "Va",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "90447bcc7cda92ffa1a9c601ed8f75cd4778d76f9c3f23aa6b595fcc6d3277a0",
+      "canonical_message_id": "cb47fa3d-d9bd-4f9d-9a8b-f4b270c4e23f",
+      "timestamp": "2026-09-29T15:08:17",
+      "sender": "partner",
+      "body_snippet": "Va",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "0c5e1372fac79512452e1a8402f281820a46faf4a648cec7ec1b6eed216706c4",
+      "canonical_message_id": "2b478c43-2b3b-4ef5-a4ae-a555fb3d57b0",
+      "timestamp": "2026-09-29T15:08:35",
+      "sender": "partner",
+      "body_snippet": "Va",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "5dd98915c39a55d4d09982b93029f080909cf55cd39718931e6a4237bf3e00b1",
+      "canonical_message_id": "dba1b066-d3da-43fe-a8e4-576c252006df",
+      "timestamp": "2026-09-29T15:08:37",
+      "sender": "partner",
+      "body_snippet": "Va",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "4fbb8d5848d72212fd93dfc057a462446fc1fe196ff6e1ee9ed39cda8e7a63a5",
+      "canonical_message_id": "8f1edd31-b422-4bdf-a0bf-920d8b4a8b09",
+      "timestamp": "2026-10-04T13:01:29",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "a0868c5556199079ccfda68607358745b981a9b9f0459e5f99b1daf2028446dd",
+      "canonical_message_id": "5e6ccbdc-e5a3-4ec8-82a5-761c4c359d5f",
+      "timestamp": "2026-10-04T13:05:56",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "472618a7bff578c41bbbef1274dcdbce89842229bae19fca324f0d837c4e4120",
+      "canonical_message_id": "7ae3c617-3c47-4ae5-bad5-f7d65642f60c",
+      "timestamp": "2026-10-05T17:20:03",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "14b1b1a372522dbec5a04ee411dd70ba47d13fb165949fe0d6a6dbe43dada769",
+      "canonical_message_id": "0b7b402d-799d-429a-b8d3-e06c94200257",
+      "timestamp": "2026-10-07T13:34:53",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "fe4740b47f275e7930b49d44a89634eb6cdce2c26bb84381fb97c25760dd6c41",
+      "canonical_message_id": "411f1244-2222-4394-8db4-899452e9eb4d",
+      "timestamp": "2026-10-07T13:34:54",
+      "sender": "partner",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "bcd7e7c3031a59137e8c60aac0e0dec213716e673c5d2e4bdab76160df15029a",
+      "canonical_message_id": "22a936e0-e406-4cf1-b257-30e7771c4603",
+      "timestamp": "2026-10-07T13:43:31",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "ac93fcff68cff635e101edf6f78a2c287b157ae54a078be2403ddeb43809c75d",
+      "canonical_message_id": "1f88d051-e5ce-4807-b86e-ff09a7beda18",
+      "timestamp": "2026-10-12T09:54:46",
+      "sender": "partner",
+      "body_snippet": "B",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "337fffa4f2eea3234aa2f0812fde8a1e90d4a372f2fb06215c6bbe47c7465cb9",
+      "canonical_message_id": "feccfcd5-088c-49af-b9db-e4fff9389432",
+      "timestamp": "2026-10-12T10:11:41",
+      "sender": "partner",
+      "body_snippet": "‎sticker omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "5fba40c976f8da6c81cc87024b3401bf9a41e633e4eb6c28fe03ea657c7e471a",
+      "canonical_message_id": "45bc2b70-4842-4fb9-b03d-4ca9b538aa87",
+      "timestamp": "2026-10-12T10:11:46",
+      "sender": "partner",
+      "body_snippet": "‎sticker omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "c42c93bacd42a8f917d494476252f89bdc7bf179385f2461733b2a5f5abc9e26",
+      "canonical_message_id": "9743ac3e-0b36-4f8f-bf9e-abe7ae20ff50",
+      "timestamp": "2026-10-12T10:12:00",
+      "sender": "partner",
+      "body_snippet": "‎GIF omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "6b7cea1549a6d9fbb0c6b65ae4b7bb346f8bf7faf765f17d4ff1f4495e5e4b4f",
+      "canonical_message_id": "9c51837d-df7b-4086-a36d-73885f10e108",
+      "timestamp": "2026-10-12T10:12:07",
+      "sender": "partner",
+      "body_snippet": "‎GIF omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "fe858c512491c4565a6882b69345499f8b457c079a5a47ceeb619f1247d98bfe",
+      "canonical_message_id": "63a27bfe-da77-4f65-97a0-5a9820d01be5",
+      "timestamp": "2026-10-12T10:12:13",
+      "sender": "partner",
+      "body_snippet": "‎GIF omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "6710d1277f5793d850850c88f3258e71b640663575888b4c7cf5993da5bc0de4",
+      "canonical_message_id": "d7b8c8d5-5c3c-4711-989e-3fe9595d358c",
+      "timestamp": "2026-10-12T10:12:15",
+      "sender": "partner",
+      "body_snippet": "‎GIF omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "abec7a96fbba91cc12a1dbd28f2a871c0eb6d6e01485f9e20ac33fcd9185b6e3",
+      "canonical_message_id": "3b44556b-0d58-4cca-a628-d8e4d77593b7",
+      "timestamp": "2026-10-12T10:14:04",
+      "sender": "partner",
+      "body_snippet": "J",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "a2c6aa8b9a753123ff4722253bc34bad725cc5a61485d096d623e1487821f148",
+      "canonical_message_id": "20f805c2-83ac-41e7-9751-d19738fb25f7",
+      "timestamp": "2026-10-24T12:19:51",
+      "sender": "partner",
+      "body_snippet": ".",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "05a91a1eea9df222281b3a6ffdc17d08c091ca84f3ed6a3b83d6b1a121e43e16",
+      "canonical_message_id": "d913dcfb-e7c9-4782-a71e-906027441a5b",
+      "timestamp": "2026-10-24T13:33:17",
+      "sender": "user",
+      "body_snippet": "‎video omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "ebb1b1824e903842bfbe23a01a7963b5508f7ad80be0fb6eb9fb092ecab4d116",
+      "canonical_message_id": "66a8ff07-67c9-425f-b7ce-e8a0ed9164d2",
+      "timestamp": "2026-10-24T13:33:17",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 11,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "344b65437f5449ee7b0f89f907c8c1e4d02dc511a00a402597d3db60bd137719",
+      "canonical_message_id": "97c86776-9b36-4abd-8d5e-f7c95a24c442",
+      "timestamp": "2026-10-24T13:36:31",
+      "sender": "user",
+      "body_snippet": "‎video omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "e056361b4b6b283d6c582dafb278398caa4b560217c100eb01a018da2a4cad8c",
+      "canonical_message_id": "8ad321cb-87e3-44ce-82be-1c1b6ee2c24e",
+      "timestamp": "2026-10-24T13:36:22",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 2,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "a4f8303cab2139129f62a4e33ea1c0ffeff6c2aa64377d874e87015adc850f4b",
+      "canonical_message_id": "d85123ab-95f9-4994-8538-29be32f2b54a",
+      "timestamp": "2026-10-24T13:36:23",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 13,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "b82f15aa062f32160f4f23cb8af2b1a3cae5e6823533a340bbaa406eb63a45af",
+      "canonical_message_id": "3bfbf678-7837-4983-b903-243816fbd656",
+      "timestamp": "2026-10-24T13:36:23",
+      "sender": "user",
+      "body_snippet": "‎video omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "6319588aae0f29d7553dc64543e603022cd54a4982b8e3013ce1abaa9a61c55e",
+      "canonical_message_id": "7055d62b-135f-4902-9925-c13811a83e10",
+      "timestamp": "2026-11-10T13:26:21",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    },
+    {
+      "content_hash": "771bfe617be0778a146967000080463b59fd69a679f0274cf8200c29f4f4a39a",
+      "canonical_message_id": "0258e3df-ea15-4a68-baaf-72fbe7b7e14f",
+      "timestamp": "2026-11-10T13:28:04",
+      "sender": "user",
+      "body_snippet": "‎image omitted",
+      "occurrences_count": 3,
+      "source_archives": [
+        "WhatsApp Chat - ❤️_🩹.zip"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "pipeline_version": "2.0.0",
+  "generated_at": "2026-11-14T16:49:56.189869",
+  "total_archives": 3,
+  "archives": [
+    {
+      "archive_id": "bea041d6-d309-4ab8-9c1e-a2c135ee2a13",
+      "original_filename": "WhatsApp Chat - Sakthi.zip",
+      "file_hash_sha256": "f9c61aac44553d53502a221845b264e6e01057a54473b1f3d36cfe17383c74ce",
+      "file_size_bytes": 36763,
+      "total_raw_lines": 2795,
+      "parsed_record_count": 2791,
+      "text_message_count": 2673,
+      "media_message_count": 50,
+      "system_event_count": 13,
+      "deleted_message_count": 8,
+      "earliest_timestamp": "2025-11-29T18:09:06",
+      "latest_timestamp": "2026-11-14T20:32:02",
+      "status": "processed"
+    },
+    {
+      "archive_id": "ee34246d-372f-4e62-b9f7-dc8d8133212a",
+      "original_filename": "WhatsApp Chat - sakthijayasri.zip",
+      "file_hash_sha256": "174a56f7857fc59e154e3b641bdb47337a53cb7bccbaddfabdfe286d9c7b1b89",
+      "file_size_bytes": 208368,
+      "total_raw_lines": 17098,
+      "parsed_record_count": 15769,
+      "text_message_count": 14914,
+      "media_message_count": 468,
+      "system_event_count": 76,
+      "deleted_message_count": 84,
+      "earliest_timestamp": "2025-11-27T20:59:23",
+      "latest_timestamp": "2026-11-14T20:36:47",
+      "status": "processed"
+    },
+    {
+      "archive_id": "c8a764bb-0369-45c9-bc02-9920d2a4f1de",
+      "original_filename": "WhatsApp Chat - ❤️_🩹.zip",
+      "file_hash_sha256": "a15ef32b204bd0696d498fc03ef6e1e26e5c03f0d50bf5c1010eec2400bfd067",
+      "file_size_bytes": 89174,
+      "total_raw_lines": 8668,
+      "parsed_record_count": 6533,
+      "text_message_count": 5522,
+      "media_message_count": 291,
+      "system_event_count": 31,
+      "deleted_message_count": 84,
+      "earliest_timestamp": "2026-09-22T10:38:04",
+      "latest_timestamp": "2026-11-14T18:26:01",
+      "status": "processed"
+    }
+  ]
+}

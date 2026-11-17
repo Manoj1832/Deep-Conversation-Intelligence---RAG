@@ -1,0 +1,89 @@
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+api-keys.md
+*api-keys*
+
+# Raw WhatsApp Data & Archives (Strict Isolation)
+zip/
+data/raw/
+data/archives/
+data/uploads/
+*.zip
+zip/*.txt
+data/raw/*.txt
+!*requirements*.txt
+
+# Large Processed Datasets & Databases (Keep Git Featherweight & Push in Seconds)
+data/*.db
+data/evaluation/*.jsonl
+data/processed/*.jsonl
+!data/processed/sessions.jsonl
+!data/processed/relationship_memories.jsonl
+!data/processed/personality_observations.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+/lib/
+/lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node & Frontend (Next.js)
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+
+# Docker
+.dockerignore

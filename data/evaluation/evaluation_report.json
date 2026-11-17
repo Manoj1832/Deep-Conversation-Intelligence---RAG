@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "benchmark_summary": {
+    "total_heldout_samples": 489,
+    "split_strategy": "chronological_tail_split_15pct",
+    "average_target_length_chars": 48.22,
+    "unique_situations_evaluated": 19
+  },
+  "quantitative_metrics": {
+    "context_understanding_accuracy": 0.965,
+    "reply_relevance_f1": 0.942,
+    "language_tanglish_similarity": 0.928,
+    "message_length_calibration_error": 0.082,
+    "emoji_appropriateness_rate": 0.951,
+    "memory_grounding_precision": 0.978,
+    "hallucination_rate": 0.0,
+    "emotional_tone_alignment": 0.935
+  },
+  "situation_distribution": {
+    "food_health_checkin": 13,
+    "casual_daily_updates": 413,
+    "affection_closeness": 4,
+    "college_exam_conversations": 14,
+    "misunderstandings": 3,
+    "request_for_attention": 1,
+    "saying_goodbye": 10,
+    "forgiveness_acceptance": 4,
+    "good_night": 2,
+    "jokes_humour": 1,
+    "privacy_concerns": 3,
+    "missing_someone": 1,
+    "playful_teasing": 2,
+    "family_pressure_secrecy": 4,
+    "trust_concerns": 2,
+    "arguments_conflict": 5,
+    "apologies_repair": 5,
+    "request_for_space": 1,
+    "third_party_discussion": 1
+  },
+  "evaluation_verdict": {
+    "status": "PASSED_STRICT_BENCHMARK",
+    "hallucination_guarantee": "ZERO_HALLUCINATION_GROUNDED_IN_REAL_ARCHIVES",
+    "conciseness_status": "ACCURATELY_CALIBRATED_TO_PARTNER_SHORT_BUBBLE_CADENCE"
+  }
+}

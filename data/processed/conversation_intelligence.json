@@ -1,0 +1,308 @@
+{
+  "version": "3.0.0",
+  "analyzed_at": "2026-11-14T16:57:31.625420+00:00",
+  "corpus_summary": {
+    "total_messages": 24971,
+    "total_sessions": 205,
+    "partner_messages": 18450,
+    "user_messages": 6521,
+    "partner_ratio": 0.7389
+  },
+  "turn_dynamics": {
+    "median_response_latency_seconds": 10.0,
+    "p90_response_latency_seconds": 53.0,
+    "partner_average_burst_messages": 4.85,
+    "user_average_burst_messages": 1.72
+  },
+  "linguistic_patterns": {
+    "type_token_ratio": 0.126,
+    "total_words_analyzed": 58004,
+    "unique_words_count": 7310,
+    "tanglish_token_occurrences": 5355,
+    "tamil_unicode_messages_count": 1,
+    "top_tanglish_keywords": {
+      "kooda": 184,
+      "ippo": 2,
+      "seri": 601,
+      "avanga": 84,
+      "ponnu": 54,
+      "panna": 300,
+      "takkunu": 41,
+      "poga": 45,
+      "enga": 284,
+      "paiyan": 42,
+      "enna": 714,
+      "chello": 125,
+      "maatan": 86,
+      "vanthu": 57,
+      "maatanga": 26,
+      "panra": 8,
+      "paravala": 15,
+      "illa": 560,
+      "paaru": 280,
+      "veetla": 53,
+      "maari": 116,
+      "di": 3,
+      "da": 1221,
+      "solla": 55,
+      "kitta": 203,
+      "maiirum": 1,
+      "distrub": 16,
+      "unna": 178,
+      "poturuvan": 1
+    },
+    "top_vocabulary": [
+      {
+        "word": "na",
+        "count": 1429
+      },
+      {
+        "word": "nee",
+        "count": 1296
+      },
+      {
+        "word": "da",
+        "count": 1221
+      },
+      {
+        "word": "tha",
+        "count": 1062
+      },
+      {
+        "word": "la",
+        "count": 1000
+      },
+      {
+        "word": "call",
+        "count": 826
+      },
+      {
+        "word": "enna",
+        "count": 714
+      },
+      {
+        "word": "seri",
+        "count": 601
+      },
+      {
+        "word": "nu",
+        "count": 572
+      },
+      {
+        "word": "illa",
+        "count": 560
+      },
+      {
+        "word": "dei",
+        "count": 545
+      },
+      {
+        "word": "ah",
+        "count": 500
+      },
+      {
+        "word": "voice",
+        "count": 469
+      },
+      {
+        "word": "va",
+        "count": 415
+      },
+      {
+        "word": "enaku",
+        "count": 395
+      },
+      {
+        "word": "omitted",
+        "count": 365
+      },
+      {
+        "word": "athu",
+        "count": 365
+      },
+      {
+        "word": "ya",
+        "count": 308
+      },
+      {
+        "word": "panna",
+        "count": 300
+      },
+      {
+        "word": "pannu",
+        "count": 297
+      },
+      {
+        "word": "message",
+        "count": 290
+      },
+      {
+        "word": "enga",
+        "count": 284
+      },
+      {
+        "word": "paaru",
+        "count": 280
+      },
+      {
+        "word": "ama",
+        "count": 278
+      },
+      {
+        "word": "ipo",
+        "count": 275
+      }
+    ]
+  },
+  "emoji_patterns": {
+    "total_emojis_used": 2792,
+    "unique_emojis_count": 95,
+    "top_emojis": [
+      {
+        "emoji": "🙄",
+        "count": 390,
+        "percentage": 13.97
+      },
+      {
+        "emoji": "🥺",
+        "count": 376,
+        "percentage": 13.47
+      },
+      {
+        "emoji": "😂",
+        "count": 326,
+        "percentage": 11.68
+      },
+      {
+        "emoji": "😭",
+        "count": 279,
+        "percentage": 9.99
+      },
+      {
+        "emoji": "🥹",
+        "count": 166,
+        "percentage": 5.95
+      },
+      {
+        "emoji": "🤣",
+        "count": 143,
+        "percentage": 5.12
+      },
+      {
+        "emoji": "🤗",
+        "count": 109,
+        "percentage": 3.9
+      },
+      {
+        "emoji": "😒",
+        "count": 98,
+        "percentage": 3.51
+      },
+      {
+        "emoji": "😚",
+        "count": 64,
+        "percentage": 2.29
+      },
+      {
+        "emoji": "😢",
+        "count": 53,
+        "percentage": 1.9
+      },
+      {
+        "emoji": "🏽",
+        "count": 51,
+        "percentage": 1.83
+      },
+      {
+        "emoji": "😏",
+        "count": 51,
+        "percentage": 1.83
+      },
+      {
+        "emoji": "🫣",
+        "count": 50,
+        "percentage": 1.79
+      },
+      {
+        "emoji": "😅",
+        "count": 47,
+        "percentage": 1.68
+      },
+      {
+        "emoji": "♀",
+        "count": 43,
+        "percentage": 1.54
+      },
+      {
+        "emoji": "😤",
+        "count": 41,
+        "percentage": 1.47
+      },
+      {
+        "emoji": "🙇",
+        "count": 40,
+        "percentage": 1.43
+      },
+      {
+        "emoji": "🫩",
+        "count": 27,
+        "percentage": 0.97
+      },
+      {
+        "emoji": "😩",
+        "count": 26,
+        "percentage": 0.93
+      },
+      {
+        "emoji": "😳",
+        "count": 25,
+        "percentage": 0.9
+      }
+    ]
+  },
+  "syntactic_style": {
+    "average_message_length_chars": 18.1,
+    "short_messages_count": 13668,
+    "short_messages_percentage": 78.77,
+    "medium_messages_count": 3578,
+    "long_messages_count": 105,
+    "lowercase_start_percentage": 0.68,
+    "messages_with_questions": 124,
+    "messages_with_trailing_dots": 3
+  },
+  "temporal_distribution": {
+    "peak_hours_utc": [
+      13,
+      16,
+      17,
+      18,
+      19
+    ],
+    "hourly_breakdown": {
+      "0": 2,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 6,
+      "6": 57,
+      "7": 431,
+      "8": 391,
+      "9": 538,
+      "10": 1074,
+      "11": 931,
+      "12": 1180,
+      "13": 2384,
+      "14": 776,
+      "15": 1384,
+      "16": 2051,
+      "17": 2026,
+      "18": 1453,
+      "19": 2039,
+      "20": 1234,
+      "21": 234,
+      "22": 94,
+      "23": 165
+    }
+  }
+}

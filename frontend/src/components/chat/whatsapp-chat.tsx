@@ -346,7 +346,23 @@ export function WhatsAppChat() {
   const handleSendMessage = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     const text = inputValue.trim();
-    if (!text || isStreaming || !activeSessionId) return;
+    if (!text || isStreaming) return;
+
+    // Ensure we have an active session ID; if not initialized yet, create/fallback to one
+    let targetSessionId = activeSessionId;
+    if (!targetSessionId) {
+      try {
+        const newSess = await apiClient.createChatSession("Sakthi");
+        setSessions([newSess]);
+        setActiveSessionId(newSess.session_id);
+        targetSessionId = newSess.session_id;
+      } catch (sessErr) {
+        console.error("Session creation error:", sessErr);
+        // Fallback session identifier so sending never gets silently dropped
+        targetSessionId = "default-session";
+        setActiveSessionId(targetSessionId);
+      }
+    }
 
     setInputValue("");
     if (textareaRef.current) {
@@ -354,9 +370,6 @@ export function WhatsAppChat() {
     }
     setShowEmojiPicker(false);
     setShowAttachMenu(false);
-    if (textareaRef.current) {
-      textareaRef.current.style.height = "auto";
-    }
     setError(null);
 
     const optimisticUserMsg: ChatMessage = {
@@ -374,7 +387,7 @@ export function WhatsAppChat() {
 
     try {
       await apiClient.streamChat(
-        activeSessionId,
+        targetSessionId,
         text,
         (token: string) => {
           accumulatedTokens += token;
@@ -1005,11 +1018,15 @@ export function WhatsAppChat() {
             <button
               type="button"
               disabled={isStreaming}
-              onClick={() => handleSendMessage()}
-              className="w-10 h-10 rounded-full bg-[#00a884] hover:bg-[#008f72] flex items-center justify-center text-white shrink-0 shadow-sm active:scale-95 transition-all"
+              onClick={handleSendMessage}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                handleSendMessage();
+              }}
+              className="w-10 h-10 rounded-full bg-[#00a884] hover:bg-[#008f72] flex items-center justify-center text-white shrink-0 shadow-sm active:scale-95 transition-all cursor-pointer"
               aria-label="Send message"
             >
-              <Send className="w-4 h-4 ml-0.5" />
+              <Send className="w-4 h-4 ml-0.5 pointer-events-none" />
             </button>
           ) : (
             <button

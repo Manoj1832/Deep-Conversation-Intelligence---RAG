@@ -2,7 +2,7 @@ import { createClient } from "@/utils/supabase/client";
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_BACKEND_API_URL ||
-  (typeof window !== "undefined" ? "/api/backend" : "http://127.0.0.1:8000/api/v1");
+  (typeof window !== "undefined" ? "/api/backend" : "https://deep-conversation-intelligence-rag.onrender.com/api/v1");
 
 export interface ChatMessage {
   id: string;

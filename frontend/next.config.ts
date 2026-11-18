@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const BACKEND_INTERNAL_URL =
-  process.env.INTERNAL_BACKEND_URL || "http://127.0.0.1:8000/api/v1";
+  process.env.INTERNAL_BACKEND_URL || "https://deep-conversation-intelligence-rag.onrender.com/api/v1";
 
 const nextConfig: NextConfig = {
   output: "standalone",

@@ -349,6 +349,9 @@ export function WhatsAppChat() {
     if (!text || isStreaming || !activeSessionId) return;
 
     setInputValue("");
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto";
+    }
     setShowEmojiPicker(false);
     setShowAttachMenu(false);
     if (textareaRef.current) {
@@ -397,7 +400,9 @@ export function WhatsAppChat() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === "Enter" && !e.shiftKey) {
+    // Only send on Enter on desktop (when shift key is NOT held)
+    // On mobile devices, Enter should insert a newline normally
+    if (e.key === "Enter" && !e.shiftKey && window.innerWidth >= 768) {
       e.preventDefault();
       handleSendMessage();
     }
@@ -714,7 +719,7 @@ export function WhatsAppChat() {
                 >
                   {/* Partner side actions */}
                   {isPartner && (
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 mb-1 mr-1">
+                    <div className="opacity-70 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity flex items-center gap-1 mb-1 mr-1">
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
@@ -832,7 +837,7 @@ export function WhatsAppChat() {
 
                   {/* User side actions (React & Edit) */}
                   {!isPartner && !isEditingThis && (
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-0.5 mb-1 ml-1">
+                    <div className="opacity-70 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity flex items-center gap-0.5 mb-1 ml-1">
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
@@ -889,9 +894,9 @@ export function WhatsAppChat() {
 
         {/* WhatsApp Emoji Picker Drawer */}
         {showEmojiPicker && (
-          <div className="bg-[#f0f2f5] dark:bg-[#202c33] border-t border-[#e9edef] dark:border-[#222d34] p-3 animate-in slide-in-from-bottom-2 duration-150 z-30">
+          <div className="bg-[#f0f2f5] dark:bg-[#202c33] border-t border-[#e9edef] dark:border-[#222d34] p-3 animate-in slide-in-from-bottom-2 duration-150 z-30 shrink-0">
             {/* Category Tabs */}
-            <div className="flex items-center gap-2 mb-2 pb-2 border-b border-[#e9edef] dark:border-[#2a3942] overflow-x-auto">
+            <div className="flex items-center gap-2 mb-2 pb-2 border-b border-[#e9edef] dark:border-[#2a3942] overflow-x-auto whatsapp-scrollbar">
               {(Object.keys(EMOJI_CATEGORIES) as Array<keyof typeof EMOJI_CATEGORIES>).map((cat) => (
                 <button
                   key={cat}
@@ -908,12 +913,12 @@ export function WhatsAppChat() {
             </div>
 
             {/* Emoji Grid */}
-            <div className="grid grid-cols-8 sm:grid-cols-12 md:grid-cols-16 gap-1 max-h-44 overflow-y-auto whatsapp-scrollbar py-1">
+            <div className="grid grid-cols-7 sm:grid-cols-10 md:grid-cols-14 gap-1.5 max-h-48 overflow-y-auto whatsapp-scrollbar py-1">
               {EMOJI_CATEGORIES[activeEmojiCategory].emojis.map((em, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleEmojiSelect(em)}
-                  className="p-1 text-xl hover:scale-125 active:scale-95 transition-transform text-center rounded-md hover:bg-black/5 dark:hover:bg-white/10"
+                  className="p-1.5 text-2xl hover:scale-125 active:scale-95 transition-transform text-center rounded-md hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer"
                 >
                   {em}
                 </button>
@@ -1055,7 +1060,9 @@ export function WhatsAppChat() {
             {/* Vault Body */}
             <div className="flex-1 flex flex-col md:flex-row min-h-0 overflow-hidden">
               {/* Left Column: Historical Sessions */}
-              <div className="w-full md:w-80 border-r border-[#e9edef] dark:border-[#222d34] flex flex-col bg-white dark:bg-[#111b21] shrink-0">
+              <div className={`w-full md:w-80 border-r border-[#e9edef] dark:border-[#222d34] flex flex-col bg-white dark:bg-[#111b21] shrink-0 ${
+                selectedHistoricalSession ? "hidden md:flex" : "flex"
+              }`}>
                 <div className="p-3 bg-[#f0f2f5] dark:bg-[#202c33] border-b border-[#e9edef] dark:border-[#222d34] flex items-center justify-between">
                   <span className="text-xs font-semibold text-[#54656f] dark:text-[#8696a0] uppercase tracking-wider">
                     Past Sessions ({historicalSessions.length})
@@ -1114,17 +1121,28 @@ export function WhatsAppChat() {
               </div>
 
               {/* Right Column: Historical Messages Viewer */}
-              <div className="flex-1 flex flex-col bg-[#efeae2] dark:bg-[#0b141a] min-w-0">
+              <div className={`flex-1 flex flex-col bg-[#efeae2] dark:bg-[#0b141a] min-w-0 ${
+                !selectedHistoricalSession ? "hidden md:flex" : "flex"
+              }`}>
                 {selectedHistoricalSession ? (
                   <>
                     <div className="p-3 bg-white dark:bg-[#202c33] border-b border-[#e9edef] dark:border-[#222d34] flex items-center justify-between shrink-0">
-                      <div>
-                        <div className="text-xs font-semibold text-[#111b21] dark:text-[#e9edef]">
-                          Session {selectedHistoricalSession.session_id.substring(0, 8)}...
-                        </div>
-                        <div className="text-[11px] text-[#8696a0]">
-                          {new Date(selectedHistoricalSession.start_timestamp).toLocaleString()} –{" "}
-                          {new Date(selectedHistoricalSession.end_timestamp).toLocaleTimeString()}
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => setSelectedHistoricalSession(null)}
+                          className="md:hidden p-1 rounded-full text-[#54656f] dark:text-[#aebac1] hover:bg-black/5"
+                          title="Back to sessions"
+                        >
+                          <ChevronLeft className="w-5 h-5" />
+                        </button>
+                        <div>
+                          <div className="text-xs font-semibold text-[#111b21] dark:text-[#e9edef]">
+                            Session {selectedHistoricalSession.session_id.substring(0, 8)}...
+                          </div>
+                          <div className="text-[11px] text-[#8696a0]">
+                            {new Date(selectedHistoricalSession.start_timestamp).toLocaleString()} –{" "}
+                            {new Date(selectedHistoricalSession.end_timestamp).toLocaleTimeString()}
+                          </div>
                         </div>
                       </div>
                       <div className="text-xs font-medium text-[#00a884] bg-[#00a884]/10 px-2 py-1 rounded">

@@ -80,6 +80,7 @@ export function WhatsAppChat() {
   const [streamingTokenBuffer, setStreamingTokenBuffer] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [mobileShowChat, setMobileShowChat] = useState(true);
+  const [isWarmingUp, setIsWarmingUp] = useState(false);
 
   // New Functionality States: Edit, Clear, Reactions, Emoji & Media Uploads
   const [editingMessageId, setEditingMessageId] = useState<string | null>(null);
@@ -109,6 +110,8 @@ export function WhatsAppChat() {
   };
 
   useEffect(() => {
+    // Proactively pre-warm Render instance as soon as the page opens
+    fetch("https://deep-conversation-intelligence-rag.onrender.com/health", { mode: "no-cors" }).catch(() => {});
     loadSessions();
   }, []);
 
@@ -125,7 +128,11 @@ export function WhatsAppChat() {
   const loadSessions = async () => {
     try {
       setError(null);
+      // If it takes more than 1.5s, Render is spinning up from cold sleep
+      const timer = setTimeout(() => setIsWarmingUp(true), 1500);
       const list = await apiClient.getChatSessions();
+      clearTimeout(timer);
+      setIsWarmingUp(false);
       setSessions(list);
       if (list.length > 0) {
         setActiveSessionId(list[0].session_id);
@@ -134,6 +141,7 @@ export function WhatsAppChat() {
       }
     } catch (err: any) {
       console.error(err);
+      setIsWarmingUp(true);
       setError("Connecting to Sakthi GPT backend...");
     }
   };
@@ -618,6 +626,8 @@ export function WhatsAppChat() {
               <p className="text-[12px] leading-tight truncate">
                 {isStreaming ? (
                   <span className="text-[#00a884] font-medium animate-pulse">typing...</span>
+                ) : isWarmingUp ? (
+                  <span className="text-amber-500 font-medium animate-pulse">connecting server...</span>
                 ) : (
                   <span className="text-[#667781] dark:text-[#8696a0]">online</span>
                 )}

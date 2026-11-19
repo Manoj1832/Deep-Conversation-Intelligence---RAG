@@ -506,13 +506,13 @@ export function WhatsAppChat() {
           </div>
 
           <div className="flex items-center gap-4 text-[#54656f] dark:text-[#aebac1]">
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Status">
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Status" aria-label="Status">
               <CircleDashed className="w-5 h-5" />
             </button>
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="New Chat" onClick={handleNewSession}>
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="New Chat" aria-label="New Chat" onClick={handleNewSession}>
               <MessageSquare className="w-5 h-5" />
             </button>
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Menu" onClick={() => setShowTopMenu(!showTopMenu)}>
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Menu" aria-label="Menu" onClick={() => setShowTopMenu(!showTopMenu)}>
               <MoreVertical className="w-5 h-5" />
             </button>
           </div>
@@ -521,17 +521,19 @@ export function WhatsAppChat() {
         {/* Search Bar with Secret Passphrase Detection */}
         <div className="p-2 border-b border-[#e9edef] dark:border-[#222d34] bg-white dark:bg-[#111b21]">
           <div className="bg-[#f0f2f5] dark:bg-[#202c33] rounded-lg h-[35px] flex items-center px-3 gap-3 focus-within:ring-1 focus-within:ring-[#00a884] transition-all">
-            <Search className="w-4 h-4 text-[#54656f] dark:text-[#8696a0] shrink-0" />
+            <Search className="w-4 h-4 text-[#54656f] dark:text-[#8696a0] shrink-0" aria-hidden="true" />
             <input
               type="text"
               value={searchQuery}
               onChange={handleSearchChange}
               placeholder="Search or enter secret vault passphrase..."
+              aria-label="Search conversations or enter secret vault passphrase"
               className="bg-transparent text-[13px] text-[#111b21] dark:text-[#e9edef] placeholder:text-[#8696a0] focus:outline-none w-full"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
+                aria-label="Clear search input"
                 className="text-[#8696a0] hover:text-[#111b21] dark:hover:text-[#e9edef]"
               >
                 <X className="w-3.5 h-3.5" />
@@ -624,19 +626,21 @@ export function WhatsAppChat() {
           </div>
 
           <div className="flex items-center gap-3 sm:gap-4 text-[#54656f] dark:text-[#aebac1] relative">
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Video Call">
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Video Call" aria-label="Video Call">
               <Video className="w-5 h-5" />
             </button>
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Voice Call">
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Voice Call" aria-label="Voice Call">
               <Phone className="w-5 h-5" />
             </button>
-            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Search in chat">
+            <button className="hover:text-[#111b21] dark:hover:text-white transition-colors" title="Search in chat" aria-label="Search in chat">
               <Search className="w-5 h-5" />
             </button>
             <button
               onClick={() => setShowTopMenu(!showTopMenu)}
               className="hover:text-[#111b21] dark:hover:text-white transition-colors p-1"
               title="Menu"
+              aria-label="Chat menu options"
+              aria-expanded={showTopMenu}
             >
               <MoreVertical className="w-5 h-5" />
             </button>
@@ -1056,7 +1060,7 @@ export function WhatsAppChat() {
                   <h3 className="font-semibold text-base flex items-center gap-2">
                     Secret Chat History Vault
                     <span className="text-[11px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">
-                      Unlocked: "kannachi"
+                      Unlocked: &quot;kannachi&quot;
                     </span>
                   </h3>
                   <p className="text-xs text-gray-400">

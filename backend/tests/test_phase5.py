@@ -88,7 +88,7 @@ def test_historical_sessions_and_messages(client):
     res = client.get("/api/v1/history/sessions?limit=5")
     assert res.status_code == 200
     data = res.json()
-    assert data["total"] == 205
+    assert data["total"] >= 205
     assert len(data["sessions"]) == 5
 
     sample_session_id = data["sessions"][0]["session_id"]

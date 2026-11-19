@@ -93,6 +93,7 @@ export function WhatsAppChat() {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [showAttachMenu, setShowAttachMenu] = useState(false);
   const [activeEmojiCategory, setActiveEmojiCategory] = useState<keyof typeof EMOJI_CATEGORIES>("favs");
+  const [learnedMemoryToast, setLearnedMemoryToast] = useState<string | null>(null);
 
   // Secret Locked History Vault States ("kannachi")
   const [searchQuery, setSearchQuery] = useState("");
@@ -409,7 +410,13 @@ export function WhatsAppChat() {
           accumulatedTokens += token;
           setStreamingTokenBuffer((prev) => prev + token);
         },
-        () => {}
+        () => {},
+        (learnedMem: any) => {
+          if (learnedMem?.title) {
+            setLearnedMemoryToast(learnedMem.title);
+            setTimeout(() => setLearnedMemoryToast(null), 4500);
+          }
+        }
       );
 
       const finalCompanionMsg: ChatMessage = {
@@ -950,6 +957,15 @@ export function WhatsAppChat() {
                       <span className="w-2 h-2 rounded-full bg-[#8696a0] animate-bounce" style={{ animationDelay: "300ms" }} />
                     </div>
                   )}
+                </div>
+              </div>
+            )}
+
+            {learnedMemoryToast && (
+              <div className="sticky bottom-2 flex justify-center z-20 pointer-events-none my-2">
+                <div className="bg-[#111b21]/90 dark:bg-[#202c33]/95 text-[#e9edef] px-3.5 py-1.5 rounded-full text-xs shadow-lg flex items-center gap-1.5 backdrop-blur-xs border border-[#2a3942]/60 animate-in fade-in slide-in-from-bottom-2 duration-200">
+                  <span className="text-[#00a884]">✨</span>
+                  <span>Learned & Stored: <strong className="font-semibold text-white">{learnedMemoryToast}</strong></span>
                 </div>
               </div>
             )}

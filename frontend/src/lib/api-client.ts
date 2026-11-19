@@ -193,7 +193,8 @@ class ApiClient {
     sessionId: string,
     message: string,
     onToken: (token: string) => void,
-    onMetadata?: (meta: any) => void
+    onMetadata?: (meta: any) => void,
+    onMemoryLearned?: (memory: any) => void
   ): Promise<void> {
     const headers = await this.getAuthHeaders();
     const response = await fetch(`${API_BASE_URL}/chat/stream`, {
@@ -230,6 +231,8 @@ class ApiClient {
               onToken(parsed.text);
             } else if (currentEvent === "metadata" && onMetadata) {
               onMetadata(parsed);
+            } else if (currentEvent === "memory_learned" && onMemoryLearned) {
+              onMemoryLearned(parsed.memory);
             }
           } catch {
             // Non-JSON or raw text

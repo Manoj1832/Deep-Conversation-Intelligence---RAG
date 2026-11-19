@@ -21,6 +21,7 @@ from fastapi.responses import JSONResponse
 from sse_starlette.sse import EventSourceResponse
 
 from backend.app.services.chat_service import ChatOrchestrationService
+from backend.app.services.langgraph_agent import LangGraphConversationAgent
 from backend.app.services.time_context import TimeContextEngine
 from backend.app.memory_engine.resolver import MemoryResolver
 from backend.app.memory_engine.review_service import MemoryReviewService
@@ -115,6 +116,14 @@ if memories_path.exists():
 memory_resolver = MemoryResolver(raw_memories)
 memory_review_service = MemoryReviewService(memory_resolver)
 
+# Production LangGraph Conversation & Continual Learning Agent
+langgraph_agent = LangGraphConversationAgent(
+    chat_orchestrator=chat_orchestrator,
+    memory_resolver=memory_resolver,
+    memory_indexer=memory_indexer,
+    processed_dir=PROCESSED_DIR
+)
+
 # Pydantic Schemas
 class ChatStreamRequest(BaseModel):
     session_id: str
@@ -200,6 +209,7 @@ def health_check():
         "status": "healthy",
         "service": "HerAI Backend",
         "environment": ENVIRONMENT,
+        "engine": "langgraph-2.0",
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
 
@@ -369,7 +379,13 @@ async def chat_stream(
     async def event_generator():
         ai_response_chunks = []
         try:
-            async for event in chat_orchestrator.stream_response(user_msg_text, history, mock_time_str=mock_time_str):
+            async for event in langgraph_agent.stream_conversation_turn(
+                user_message=user_msg_text,
+                session_history=history,
+                session_id=session_id,
+                user_id=user_id,
+                mock_time_str=mock_time_str
+            ):
                 if event["event"] == "token":
                     ai_response_chunks.append(event["data"]["text"])
                 yield {
@@ -401,6 +417,80 @@ async def chat_stream(
             }
 
     return EventSourceResponse(event_generator())
+
+@app.post("/api/v1/chat/langgraph")
+def chat_langgraph(
+    req: ChatStreamRequest,
+    x_mock_time: Optional[str] = Header(None),
+    user_id: str = Depends(get_current_user)
+):
+    """
+    Direct production execution of the full LangGraph state graph.
+    Runs context enrichment, response generation, and continual self-learning memory extraction.
+    """
+    session_id = req.session_id
+    user_msg_text = req.message
+    mock_time_str = req.mock_time or x_mock_time
+
+    session = LIVE_SESSIONS.get(session_id)
+    if session and session.get("owner_id") != user_id:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Access denied: Not your session")
+
+    if not session:
+        LIVE_MESSAGES[session_id] = []
+        LIVE_SESSIONS[session_id] = {
+            "session_id": session_id,
+            "owner_id": user_id,
+            "title": user_msg_text[:30] if user_msg_text else "Conversation",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "last_message": user_msg_text
+        }
+
+    user_msg = {
+        "id": str(uuid4()),
+        "role": "user",
+        "content": user_msg_text,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+    LIVE_MESSAGES[session_id].append(user_msg)
+    history = LIVE_MESSAGES[session_id][:-1]
+
+    state_result = langgraph_agent.run_turn(
+        user_message=user_msg_text,
+        session_history=history,
+        session_id=session_id,
+        user_id=user_id,
+        mock_time_str=mock_time_str
+    )
+
+    full_ai_content = state_result.get("full_response", "")
+    ai_msg = {
+        "id": str(uuid4()),
+        "role": "companion",
+        "content": full_ai_content,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+    LIVE_MESSAGES[session_id].append(ai_msg)
+    if session_id in LIVE_SESSIONS:
+        LIVE_SESSIONS[session_id]["last_message"] = full_ai_content
+
+    try:
+        _persist_to_history(session_id, user_msg, ai_msg, LIVE_SESSIONS.get(session_id))
+    except Exception as hist_err:
+        logger.warning(f"Could not persist conversation turn to history: {hist_err}")
+
+    return {
+        "session_id": session_id,
+        "reply": full_ai_content,
+        "provider": state_result.get("generation_provider", ""),
+        "time_slot": state_result.get("time_ctx", {}).get("slot_id"),
+        "time_name": state_result.get("time_ctx", {}).get("slot_name"),
+        "current_time_ist": state_result.get("time_ctx", {}).get("current_time_ist"),
+        "emotion": state_result.get("detected_emotion"),
+        "learned_memories": state_result.get("extracted_memories", []),
+        "learned_count": state_result.get("learned_memory_count", 0),
+        "status": state_result.get("memory_update_status", "")
+    }
 
 # -----------------------------------------------------------------------------
 # 2. RELATIONSHIP MEMORIES ENDPOINTS (Multi-tenant Ownership)

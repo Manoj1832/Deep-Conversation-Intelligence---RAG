@@ -1,5 +1,5 @@
 {
-  "profile_id": "3ef0b3f6-1099-45b0-ae78-c4e247b11927",
+  "profile_id": "f7ce7e25-207f-4e8f-9ffb-b692b6aaaff2",
   "version": "1.0.0",
   "participant": "partner",
   "total_messages_analyzed": 18450,
@@ -236,6 +236,6 @@
   "observations_count": 5,
   "confidence": 0.96,
   "review_status": "verified",
-  "created_at": "2026-11-17T04:01:33.987303+00:00",
-  "updated_at": "2026-11-17T04:01:33.987303+00:00"
+  "created_at": "2026-11-19T09:48:11.328035+00:00",
+  "updated_at": "2026-11-19T09:48:11.328035+00:00"
 }

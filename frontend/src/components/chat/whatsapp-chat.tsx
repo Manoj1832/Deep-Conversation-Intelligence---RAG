@@ -87,6 +87,8 @@ export function WhatsAppChat() {
   const [editingContent, setEditingContent] = useState("");
   const [reactionPickerMessageId, setReactionPickerMessageId] = useState<string | null>(null);
   const [showClearChatModal, setShowClearChatModal] = useState(false);
+  const [clearChatPinInput, setClearChatPinInput] = useState("");
+  const [clearChatError, setClearChatError] = useState<string | null>(null);
   const [showTopMenu, setShowTopMenu] = useState(false);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [showAttachMenu, setShowAttachMenu] = useState(false);
@@ -174,17 +176,23 @@ export function WhatsAppChat() {
     }
   };
 
-  // 1. Clear Chat Functionality
+  // 1. Clear Chat Functionality (PIN Protected: 1206)
   const handleClearChat = async () => {
     if (!activeSessionId) return;
+    if (clearChatPinInput.trim() !== "1206") {
+      setClearChatError("Incorrect PIN! Enter '1206' to clear.");
+      return;
+    }
     try {
-      await apiClient.clearChatMessages(activeSessionId);
+      setClearChatError(null);
+      await apiClient.clearChatMessages(activeSessionId, clearChatPinInput.trim());
       setMessages([]);
       setShowClearChatModal(false);
+      setClearChatPinInput("");
       setShowTopMenu(false);
     } catch (err: any) {
       console.error(err);
-      setError("Failed to clear chat messages.");
+      setClearChatError(err.message || "Failed to clear chat messages.");
     }
   };
 
@@ -457,7 +465,7 @@ export function WhatsAppChat() {
         className="hidden"
       />
 
-      {/* Clear Chat Confirmation Modal */}
+      {/* Clear Chat Confirmation Modal with Security PIN Protection */}
       {showClearChatModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-xs p-4 animate-in fade-in duration-150">
           <div className="bg-white dark:bg-[#202c33] rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-[#e9edef] dark:border-[#2a3942] space-y-4">
@@ -470,11 +478,42 @@ export function WhatsAppChat() {
               </h3>
             </div>
             <p className="text-sm text-[#54656f] dark:text-[#8696a0] leading-relaxed">
-              This will clear all messages in this conversation with Sakthi. This cannot be undone.
+              This action requires authorization. Please enter security PIN to permanently clear this conversation with Sakthi.
             </p>
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold text-[#54656f] dark:text-[#8696a0] flex items-center gap-1">
+                <Lock className="w-3.5 h-3.5" />
+                Security PIN
+              </label>
+              <input
+                type="password"
+                maxLength={6}
+                value={clearChatPinInput}
+                onChange={(e) => {
+                  setClearChatPinInput(e.target.value);
+                  setClearChatError(null);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    handleClearChat();
+                  }
+                }}
+                placeholder="Enter 4-digit PIN"
+                className="w-full bg-[#f0f2f5] dark:bg-[#111b21] border border-[#e9edef] dark:border-[#2a3942] rounded-xl px-3 py-2 text-center text-lg tracking-widest font-mono text-[#111b21] dark:text-[#e9edef] focus:outline-none focus:ring-2 focus:ring-[#00a884]"
+                autoFocus
+              />
+              {clearChatError && (
+                <p className="text-xs text-red-500 font-medium pt-0.5">{clearChatError}</p>
+              )}
+            </div>
             <div className="flex items-center justify-end gap-3 pt-2">
               <button
-                onClick={() => setShowClearChatModal(false)}
+                onClick={() => {
+                  setShowClearChatModal(false);
+                  setClearChatPinInput("");
+                  setClearChatError(null);
+                }}
                 className="px-4 py-2 rounded-xl text-sm font-medium text-[#54656f] dark:text-[#8696a0] hover:bg-[#f0f2f5] dark:hover:bg-[#2a3942] transition-colors"
               >
                 Cancel

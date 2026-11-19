@@ -145,13 +145,16 @@ class ApiClient {
     return data.messages || [];
   }
 
-  async clearChatMessages(sessionId: string): Promise<void> {
+  async clearChatMessages(sessionId: string, pin: string = "1206"): Promise<void> {
     const headers = await this.getAuthHeaders();
-    const res = await fetch(`${API_BASE_URL}/chat/sessions/${sessionId}/messages`, {
+    const res = await fetch(`${API_BASE_URL}/chat/sessions/${sessionId}/messages?pin=${encodeURIComponent(pin)}`, {
       method: "DELETE",
       headers,
     });
-    if (!res.ok) throw new Error("Failed to clear chat messages");
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || "Failed to clear chat messages");
+    }
   }
 
   async editMessage(sessionId: string, messageId: string, content: string): Promise<{ status: string; message_id: string; content: string }> {

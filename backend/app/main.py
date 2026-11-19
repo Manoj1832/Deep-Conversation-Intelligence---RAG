@@ -140,6 +140,9 @@ class EditMessageRequest(BaseModel):
 class MessageReactionRequest(BaseModel):
     emoji: str = Field(..., max_length=10)
 
+class ClearChatRequest(BaseModel):
+    pin: Optional[str] = Field(None, max_length=10)
+
 # User Authorization Dependency with Bearer Token & Multi-tenant Isolation
 def get_current_user(authorization: Optional[str] = Header(None)) -> str:
     if not authorization:
@@ -259,9 +262,16 @@ def get_session_messages(session_id: str, user_id: str = Depends(get_current_use
         "messages": LIVE_MESSAGES.get(session_id, [])
     }
 
+CLEAR_CHAT_PIN = os.getenv("CLEAR_CHAT_PIN", "1206")
+
 @app.delete("/api/v1/chat/sessions/{session_id}/messages")
-def clear_session_messages(session_id: str, user_id: str = Depends(get_current_user)):
-    """Clears all conversation messages in the given chat session."""
+def clear_session_messages(session_id: str, pin: Optional[str] = Query(None), user_id: str = Depends(get_current_user)):
+    """Clears all conversation messages in the given chat session with required PIN protection."""
+    if pin != CLEAR_CHAT_PIN:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Incorrect PIN for clearing chat. Please enter valid PIN."
+        )
     session = LIVE_SESSIONS.get(session_id)
     if session and session.get("owner_id") != user_id:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Access denied")
@@ -377,6 +387,12 @@ async def chat_stream(
             LIVE_MESSAGES[session_id].append(ai_msg)
             if session_id in LIVE_SESSIONS:
                 LIVE_SESSIONS[session_id]["last_message"] = full_ai_content
+
+            # Persist ongoing conversation to history vault in background
+            try:
+                _persist_to_history(session_id, user_msg, ai_msg, LIVE_SESSIONS.get(session_id))
+            except Exception as hist_err:
+                logger.warning(f"Could not persist conversation turn to history: {hist_err}")
         except Exception as e:
             logger.error(f"Streaming error in session {session_id}: {e}")
             yield {
@@ -478,6 +494,96 @@ def get_personality_observations(user_id: str = Depends(get_current_user)):
         for line in f:
             observations.append(json.loads(line))
     return {"observations": observations}
+
+def _persist_to_history(session_id: str, user_msg: dict, ai_msg: dict, session_info: Optional[dict] = None):
+    """Stores every real-time conversation message and updates session metadata in the history files."""
+    sessions_path = PROCESSED_DIR / "sessions.jsonl"
+    messages_path = PROCESSED_DIR / "messages.jsonl"
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+    # Format messages to match HistoricalMessage schema
+    hist_user_msg = {
+        "id": user_msg.get("id"),
+        "archive_id": "live-chat",
+        "source_message_id": f"live:{user_msg.get('id')}",
+        "timestamp": user_msg.get("timestamp", now_iso),
+        "sender": "user",
+        "original_sender": "Manoj",
+        "body": user_msg.get("content", ""),
+        "message_type": "text",
+        "media_type": "none",
+        "is_system_message": False,
+        "is_multiline": "\n" in user_msg.get("content", ""),
+        "source_line_number": 0,
+        "content_hash": "",
+        "is_duplicate_across_archives": False,
+        "session_id": session_id,
+        "created_at": now_iso
+    }
+
+    hist_ai_msg = {
+        "id": ai_msg.get("id"),
+        "archive_id": "live-chat",
+        "source_message_id": f"live:{ai_msg.get('id')}",
+        "timestamp": ai_msg.get("timestamp", now_iso),
+        "sender": "partner",
+        "original_sender": "Sakthi",
+        "body": ai_msg.get("content", ""),
+        "message_type": "text",
+        "media_type": "none",
+        "is_system_message": False,
+        "is_multiline": "\n" in ai_msg.get("content", ""),
+        "source_line_number": 0,
+        "content_hash": "",
+        "is_duplicate_across_archives": False,
+        "session_id": session_id,
+        "created_at": now_iso
+    }
+
+    # Append to messages.jsonl
+    with open(messages_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(hist_user_msg) + "\n")
+        f.write(json.dumps(hist_ai_msg) + "\n")
+
+    # Update or insert into sessions.jsonl
+    sessions = []
+    found = False
+    if sessions_path.exists():
+        with open(sessions_path, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                try:
+                    s = json.loads(line)
+                    if s.get("session_id") == session_id:
+                        s["end_timestamp"] = now_iso
+                        s["message_count"] = s.get("message_count", 0) + 2
+                        s["user_message_count"] = s.get("user_message_count", 0) + 1
+                        s["partner_message_count"] = s.get("partner_message_count", 0) + 1
+                        found = True
+                    sessions.append(s)
+                except Exception:
+                    continue
+
+    if not found:
+        new_sess = {
+            "session_id": session_id,
+            "start_timestamp": now_iso,
+            "end_timestamp": now_iso,
+            "inactivity_threshold_hours": 6.0,
+            "message_count": 2,
+            "partner_message_count": 1,
+            "user_message_count": 1,
+            "source_archive_ids": ["live-chat"],
+            "created_at": now_iso
+        }
+        sessions.insert(0, new_sess)
+
+    # Write back sessions (placing current live session at top)
+    with open(sessions_path, "w", encoding="utf-8") as f:
+        for s in sessions:
+            f.write(json.dumps(s) + "\n")
+
 
 # -----------------------------------------------------------------------------
 # 4. HISTORICAL CHAT SESSIONS & MESSAGES (WHATSAPP ARCHIVE EXPLORER)

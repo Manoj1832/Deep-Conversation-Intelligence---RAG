@@ -478,13 +478,13 @@ CORE CONVERSATIONAL GUIDELINES:
                 )
 
                 for model_name in unique_models:
+                    collected_tokens = []
                     try:
                         response_stream = self.client.models.generate_content_stream(
                             model=model_name,
                             contents=contents,
                             config=config
                         )
-                        collected_tokens = []
                         for chunk in response_stream:
                             if chunk.text:
                                 clean_chunk = chunk.text.replace("\u202f", " ")
@@ -509,6 +509,13 @@ CORE CONVERSATIONAL GUIDELINES:
                             return
                     except Exception as model_err:
                         print(f"[!] Gemini model '{model_name}' error: {model_err}. Trying fallback...")
+                        if collected_tokens:
+                            # If tokens were already sent, terminate cleanly
+                            yield {
+                                "event": "end",
+                                "data": {"status": "completed"}
+                            }
+                            return
             except Exception as e:
                 print(f"[!] Gemini orchestration error: {e}. Trying secondary provider...")
 
@@ -531,6 +538,7 @@ CORE CONVERSATIONAL GUIDELINES:
             groq_messages.append({"role": "user", "content": current_text})
 
             for g_model in unique_groq:
+                collected_tokens = []
                 try:
                     response_stream = await self.groq_client.chat.completions.create(
                         model=g_model,
@@ -539,7 +547,6 @@ CORE CONVERSATIONAL GUIDELINES:
                         max_tokens=90,
                         temperature=0.75
                     )
-                    collected_tokens = []
                     async for chunk in response_stream:
                         delta = chunk.choices[0].delta
                         delta_text = getattr(delta, "content", None) or ""
@@ -561,6 +568,12 @@ CORE CONVERSATIONAL GUIDELINES:
                         return
                 except Exception as groq_err:
                     print(f"[!] Groq model '{g_model}' error: {groq_err}. Trying fallback...")
+                    if collected_tokens:
+                        yield {
+                            "event": "end",
+                            "data": {"status": "completed"}
+                        }
+                        return
 
         # ---------------------------------------------------------------------
         # PROVIDER 3: DYNAMIC LOCAL FALLBACK (Offline / Disaster Recovery)

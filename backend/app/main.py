@@ -199,8 +199,21 @@ def get_current_user(authorization: Optional[str] = Header(None)) -> str:
     return "user_default"
 
 # -----------------------------------------------------------------------------
-# HEALTH CHECKS
+# ROOT & HEALTH CHECKS
 # -----------------------------------------------------------------------------
+
+@app.get("/")
+@app.head("/")
+def root():
+    return {
+        "status": "online",
+        "service": "HerAI Sakthi GPT Core Backend",
+        "version": "2.0.0",
+        "engine": "langgraph-2.0",
+        "docs": "/docs",
+        "health": "/health",
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
 
 @app.get("/health")
 @app.get("/api/v1/health")
